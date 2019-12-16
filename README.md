@@ -1,17 +1,17 @@
-# 프로젝트명
+## 프로젝트명
 
 - 바로나 마취통증의학과 디자인 리뉴얼 & 코드 리팩토링
 
-# 개발환경
+## 개발환경
 
-- Client Side: HTML5, CSS3, JS, Jquery
-- Server Side: JSP
-- Framework: Spring, Mybatis, Tiles
-- Database: Mysql
-- Server: Tomcat8
-- Build: Maven
+- **Client Side**: HTML5, CSS3, JS, Jquery
+- **Server Side**: JSP
+- **Framework**: Spring, Mybatis, Tiles
+- **Database**: Mysql
+- **Server**: Tomcat8
+- **Build**: Maven
 
-# 주요기능
+## 주요기능
 
 - [ ] 메인페이지
 
@@ -51,16 +51,16 @@
   - [ ] 공지사항 관리
   - [ ] 자주하는 질문 관리
 
-# 작업기간
+## 작업기간
 
 - 개발: 5-7일 (2019-12-16 ~ 2019-12-20)
 - 유지보수: 협의
 
-# 배포환경
+## 배포환경
 
 - 호스팅: Cafe24 (https://www.cafe24.com/)
 - 도메인: 가비아 (https://www.gabia.com)
 
-# 결과물
+## 결과물
 
 - 바로나 마취통증의학과(리뉴얼 전): http://thebarona.com
