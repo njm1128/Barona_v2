@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- Enables the Spring MVC @Controller programming model -->
+	<mvc:annotation-driven />
+
+	<!-- <interceptors>
+		<interceptor>
+			<mapping path="/**/*"/>
+			<exclude-mapping path="/"/>
+			<exclude-mapping path="/**/main.do"/>
+			<exclude-mapping path="/**/popUp/**/*"/>
+			<exclude-mapping path="/**/intro/**/*"/>
+			<exclude-mapping path="/**/expert/**/*"/>
+			<exclude-mapping path="/**/disease/**/*"/>
+			<exclude-mapping path="/**/treatment/**/treatment_1.do"/>
+			<exclude-mapping path="/**/treatment/**/treatment_2.do"/>
+			<exclude-mapping path="/**/treatment/**/treatment_3.do"/>
+			<exclude-mapping path="/**/treatment/**/treatment_4.do"/>
+			<exclude-mapping path="/**/counsel/**/*"/>
+			<exclude-mapping path="/**/footer/**/*"/>
+			<exclude-mapping path="/**/admin/**/*"/>
+			<beans:bean class="com.dawn.barona.interceptor.AccessInterceptor" />
+		</interceptor>
+	</interceptors> -->
+	
+	<!-- Handles HTTP GET requests for /resources/** by efficiently serving 
+		up static resources in the ${webappRoot}/resources directory -->
+	<mvc:resources mapping="/resources/**" location="/resources/" />
+
+	<!-- Resolves views selected for rendering by @Controllers to .jsp resources 
+		in the /WEB-INF/views directory -->
+	<beans:bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<beans:property name="prefix" value="/WEB-INF/views/" />
+		<beans:property name="suffix" value=".jsp" />
+		<beans:property name="order" value="2" />
+	</beans:bean>
+
+	<beans:bean id="tilesViewResolver"
+		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		<beans:property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView" />
+		<beans:property name="order" value="1" />
+	</beans:bean>
+
+	<beans:bean id="tilesConfigurer"
+		class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+		<beans:property name="definitions">
+			<beans:list>
+				<beans:value>/WEB-INF/tiles/tiles.xml</beans:value>
+				<beans:value>/WEB-INF/tiles/admin/tiles.xml</beans:value>
+			</beans:list>
+		</beans:property>
+	</beans:bean>
+
+	<context:component-scan base-package="com.innovation.barona" />
+
+</beans:beans>

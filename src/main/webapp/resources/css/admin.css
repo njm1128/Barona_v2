@@ -1,0 +1,117 @@
+ @CHARSET "UTF-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); 
+@import url(//cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
+
+* {
+	margin: 0px; padding: 0px; font-family: "Nanum Gothic", sans-serif;
+}
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	font-size: 13px !important;
+}
+img {
+	border: 0px currentColor;
+}
+ul {
+	list-style: none;
+}
+a, a:hover, a:visited, a:link, a:active {
+	text-decoration: none;
+	color: #000;
+}
+
+#container {
+	min-height: 700px;
+}
+
+.content {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+.content > h2 {
+	margin: 0 0 50px;
+}
+.content > h2 img {
+	width: 75px;
+}
+
+#footer {   
+	background: #4d4d4d;
+    color: #eee;
+    padding: 30px 15px;
+    line-height: 170%;
+} 
+
+.gnb {height:70px; background: url(../images/commons/bg_gnb.jpg) repeat-x 0 0;}
+.gnb ul {font-size: 0;}
+.gnb li {display: inline-block; margin: 0 3px; text-align: center; font-size: 16px;}
+.gnb li:first-child {margin: 0 0 0 130px;}
+.gnb li a {display: inline-block; width: 70px; height: 65px; margin: 2px 0; color: #b4b4b4; line-height: 103px; font-size: 11px;}
+.gnb li.on a {color: #fff; background: #0a0a0a; border-radius: 5px;}
+.gnb li a i {position: relative; top: 23px; display: block !important; line-height: 0; font-size: 24px;}
+
+.tbl-view input {
+	width: 100%;
+	height: 25px
+}
+.tbl-view textarea {
+	width: 100%;
+	height: 100%;
+	resize: none;
+}
+
+.login_wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #edeef2;
+}
+.login {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -145px;
+	margin-left: -153px;
+}
+.login .title {
+	position: relative;
+	top: 7px;
+	text-align: center;
+}
+.login input {
+	display: block;
+	margin: 7px 0;
+	padding: 0 17px;
+	width: 270px;
+	height: 34px;
+	line-height: 34px;
+	border: 1px solid #b9babd;
+	background: #fff;
+	color: #b0b0b0;
+	font-size: 15px;
+}
+.login .btn_login {
+	display: block;
+	overflow: hidden;
+	width: 306px;
+	height: 43px;
+	background: url(../images/commons/btn-login.gif) no-repeat 0 0;
+	font-size: 0;
+	line-height: 0;
+	vertical-align: top;
+	border: none;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 426px) {
+	.gnb li:first-child {margin-left: 0;}
+	#footer {font-size: 11px;}
+}

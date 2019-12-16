@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+	<definition name="adminLayoutM" template="/WEB-INF/tiles/mobile/admin/layouts/layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/tiles/mobile/admin/components/header.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/mobile/admin/components/footer.jsp" />
+	</definition>
+
+	<definition name="mobile/admin/notice/*" extends="adminLayoutM">
+		<put-attribute name="content" value="/WEB-INF/views/mobile/admin/notice/{1}.jsp" />
+	</definition>
+
+	<definition name="mobile/admin/faq/*" extends="adminLayoutM">
+		<put-attribute name="content" value="/WEB-INF/views/mobile/admin/faq/{1}.jsp" />
+	</definition>
+
+</tiles-definitions>

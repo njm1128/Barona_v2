@@ -1,0 +1,204 @@
+@CHARSET "UTF-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); 
+@import url(//cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
+
+* {
+	margin: 0px; padding: 0px; font-family: "Nanum Gothic", sans-serif;
+}
+body {
+	font-size: 13px !important;
+}
+img {
+	border: 0px currentColor;
+}
+ul {
+	list-style: none;
+}
+a, a:hover, a:visited, a:link, a:active {
+	text-decoration: none;
+	color: #000;
+}
+.fixed {
+	position: fixed;
+	top: 0px;
+	z-index: 10;
+}
+.float {
+	float: left;
+}
+.clearfix {
+	clear: both; content: "";
+}
+#container {
+	width: 100%; display: inline-block;
+}
+#container .content01 {
+	width: 100%; min-width: 1150px;
+}
+#container .section01 {
+	width: 100%; min-width: 1150px;
+}
+#container .content03 {
+	width: 100%; min-width: 1150px;
+}
+#container .section01 {
+	margin: 120px 0 0;
+}
+#container .section01 > div {
+	width: 1198px; margin: 0 auto;
+}
+#container .section01 h2 {
+	text-align: center;
+}
+#container .section01 .pain {
+	margin: 30px 0 0;
+}
+#container .section01 .pain ul {
+	overflow: hidden; text-align: center; border: 1px solid #dedede; background:#fbfbfb;
+}
+#container .section01 .pain li {
+	display: inline-block; width: 145px; height: 150px; padding: 23px 0 0; border-left: 1px solid #dedede;
+}
+#container .section01 .pain li:first-child {
+	border-left: none;
+}
+#container .section01 .pain li .bg_image {
+	width: 80px; height: 77px; margin: 0 auto; 
+}
+#container .section01 .pain li .pain_txt {
+	display: block; padding: 3px 0 0; font-size: 20px; color: #444; font-weight: 400; letter-spacing: -0.05em;
+}
+#container .section01 .pain li a:hover .pain_txt {
+	color: #f08100; text-decoration: underline;
+}
+
+#container .section02 {
+	margin: 50px 0;
+	text-align: center;
+}
+#container .section02 .con_wrap03 {
+	margin: 0 auto; width: 1202px; text-align: center; border: 1px solid #dedede
+}
+#container .float {
+	float: left;
+}
+#container .banner {
+	width: 400px;
+}
+#container .section03 {
+	margin: 0 0 30px; width: 100%; text-align: center;
+}
+#container .section03 .con_wrap02 {
+	margin: 0 auto; width: 1206.2px; text-align: center; 
+}
+#container .content03 {
+	margin: 20px 0 0;
+}
+#container .content03 > div {
+	width: 1150px; margin: 0 auto;
+}
+#container .content03 .sec01 {
+	display: inline-block; position: relative; vertical-align: top;
+}
+#container .content03 .sec01 .txt {
+	position: absolute; top: 33px; left: 33px; font-size: 21px; line-height: 23px; color: #563f3d; font-weight: bold;
+}
+#container .content03 .sec01 .txt span {
+	display: block; font-size: 14px; color: #fff; margin-top: 10px; font-weight: normal;
+}
+#container .content03 .sec01 .btn_more {
+	position: absolute; top: 155px; left: 31px; width: 53px; height: 53px; padding: 0; text-align: center; line-height: 53px; font-size: 13px; font-weight: normal; color: #fff; border-radius: 50%; background: #a38b89;
+}
+#container .content03 .sec02 {
+	display: inline-block; font-size: 0; width: 390px; margin: 0 10px;
+}
+#container .content03 .sec02 > div {
+	display: inline-block; padding: 38px 0 0; width: 50%; height: 228px; text-align: center; border: 1px solid #e1e1e1; background: #fbfdff;
+}
+#container .content03 .sec02 > div:first-child {
+	border-right: none;
+}
+#container .content03 .sec02 .image {
+	display: block; margin: 0 auto; width: 111px; height: 111px; background-image: url(../images/main/online_reserve.png); background-repeat: no-repeat;
+}
+#container .content03 .sec02 .image01 {background-position: 0 0;}
+#container .content03 .sec02 .image02 {background-position: -113px 0;}
+#container .content03 .sec02 .text {
+	display: block; padding: 8px 0 0; font-size: 22px; font-weight: 400; color: #333; letter-spacing: -0.05em;
+}
+#container .content03 .sec03 {
+	display: inline-block; width: 340px; height: 227px; vertical-align: top; background: #fbfdff; border: 1px solid #e1e1e1;
+}
+#container .content03 .sec03 ul {
+	padding: 18px 0 0; font-size: 0; text-align: center;
+}
+#container .content03 .sec03 li {
+	display: inline-block; width: 50%; 
+}
+#container .content03 .sec03 li .text {
+	padding: 2px 0 0; font-size:15px; color: #666;
+}
+.footInfo {
+	margin: 20px 0 0; padding: 15px 0 32px; background: #f8f8f8;
+}
+.footInfo > div {
+	width: 1150px; margin: 0 auto;
+}
+.footInfo .title {
+	margin-bottom: 20px; font-size: 25px; color: #4e4a49; font-weight: 600; font-family: 'NanumSR';
+}
+.footInfo .sec01 {
+	display: inline-block; width: 390px; 
+}
+.footInfo .sec01 p {
+	color: #666; font-size: 15px; font-family: Roboto;
+}
+.footInfo .sec01 p span {
+	display: inline-block; width: 90px; font-size: 14px;
+}
+.footInfo .sec01 p.info {
+	color: #ef5043; font-size: 14px; margin: 8px 0 0;
+}
+.footInfo .sec02 {
+	display: inline-block; margin: 0 10px; width: 390px; vertical-align: top;
+}
+.footInfo .sec02 h3 {
+	color: #a0a0a0; font-weight: bold; font-size: 35px; line-height:50px;
+}
+.footInfo .sec02 h3 img {
+	width: 60px; height: 60px; position: relative; bottom: 8px; margin: 0 10px 0 0;
+}
+.footInfo .sec02 p {
+	color: #666; font-size: 15px; font-family: Roboto;
+}
+.footInfo .sec02 p.info {
+	color: #ef5043; line-height: 160%;
+}
+.footInfo .sec03 {
+	display: inline-block; width: 340px; vertical-align: top; position: relative; background: url(../images/commons/map_ico.png) no-repeat 221px 46px;
+}
+.footInfo .sec03 p {
+	color: #666; font-size: 15px; font-family: Roboto; line-height: 160%;
+}
+.footInfo .sec03 span {
+	position: absolute; top: 150px; left: 0px; font-family: 'NanumSB'; font-size: 16px; font-weight: bold; text-decoration: underline; line-height: 23px; padding-right: 12px; background: url(../images/commons/arrow_gray.png) no-repeat right center;
+}
+.footInfo .sec03 span a {
+	color: #5e5f5f;
+}
+.flexslider{
+	border: none !important;
+}
+.flexslider li .main_sl {
+	width: 100%; height: 610px; overflow: hidden; min-width: 1200px;
+}
+.flexslider li .s1 {
+	background: url("../images/main/slide1.png") center;
+}
+.flexslider li .s2 {
+	background: url("../images/main/slide1.png") center;
+}
+#header .menu .logo {
+	margin: 0px auto; width: 1200px; height: 59px; text-align: left;
+}

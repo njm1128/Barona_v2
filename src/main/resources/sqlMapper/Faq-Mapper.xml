@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="Faq-Mapper">
+	<resultMap type="faq" id="faqMap">
+		<id property="faqNo" column="faq_no"/>
+		<result property="faqType" column="faq_type" />
+		<result property="faqQuestion" column="faq_question" />
+		<result property="faqAnswer" column="faq_answer" />
+	</resultMap>
+	
+	<select id="selectFaqList" resultMap="faqMap">
+		SELECT
+			*
+		FROM
+			FAQ
+		ORDER BY
+			FAQ_NO DESC
+	</select>
+	
+	<sql id="search">
+		<if test="searchType != null and searchType != ''">
+			<if test="searchType == 't'.toString()">
+				AND FAQ_QUESTION LIKE CONCAT(CONCAT('%', #{keyword}), '%')
+			</if>
+			<if test="searchType == 'c'.toString()">
+				AND FAQ_ANSWER LIKE CONCAT(CONCAT('%', #{keyword}), '%')
+			</if>
+			
+			<if test="searchType == 'tc'.toString()">
+				AND (FAQ_QUESTION LIKE CONCAT(CONCAT('%', #{keyword}), '%') or
+				   FAQ_ANSWER LIKE CONCAT(CONCAT('%', #{keyword}), '%'))
+			</if>
+		</if>
+	</sql>
+	
+	<select id="selectFaqListSearch" resultMap="faqMap">
+		SELECT 
+			*
+		FROM 
+			FAQ
+		WHERE 
+			0 = 0
+		<include refid="search"></include>
+		ORDER BY 
+			FAQ_NO DESC
+	</select>
+	
+	<select id="selectFaqSearchCount" resultType="int">
+		SELECT 
+			COUNT(*)
+		FROM 
+			FAQ
+		WHERE 
+			0 = 0
+		<include refid="search"></include>
+	</select>
+	
+	<select id="selectFaqByNo" resultMap="faqMap" parameterType="int">
+		SELECT
+			*
+		FROM
+			FAQ
+		WHERE
+			FAQ_NO = #{faqNo}
+	</select>
+	
+	<insert id="insertFaq" parameterType="faq">
+		INSERT INTO FAQ (
+			FAQ_TYPE,
+			FAQ_QUESTION,
+			FAQ_ANSWER)
+		VALUES (
+			#{faqType},
+			#{faqQuestion},
+			#{faqAnswer})
+	</insert>
+	
+	<update id="updateFaq" parameterType="faq">
+		UPDATE 
+			FAQ
+		SET
+			 FAQ_TYPE = #{faqType}
+			,FAQ_QUESTION = #{faqQuestion}
+			,FAQ_ANSWER = #{faqAnswer}
+		WHERE
+			FAQ_NO = #{faqNo}
+	</update>
+	
+	<delete id="deleteFaq" parameterType="faq">
+		DELETE FROM
+			FAQ
+		WHERE
+			FAQ_NO = #{faqNo}
+	</delete>
+</mapper>

@@ -1,0 +1,37 @@
+@CHARSET "UTF-8";
+
+#side {
+	position: fixed;
+	top:280px;
+	right:0;
+	opacity: 0.9;
+}
+
+#side .phone {
+	padding: 11px 0 10px;
+	width: 80px;
+	height: 46px;
+	background: #f8f8f8;
+	border: 2px solid #c0c0c0;
+	border-right: none;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+#side .phone a {
+	display: block;
+	text-align: center;
+}
+
+#side .phone a .fas {
+	display: block;
+    margin: 0 0 3px;
+    font-size: 26px;
+}
+
+#side .phone a .txt {
+	display: block;
+    font-family: '맑은 고딕';
+    font-size: 13px;
+    font-weight: bold;
+}

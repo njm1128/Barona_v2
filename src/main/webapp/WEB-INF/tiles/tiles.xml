@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+	<definition name="layout" template="/WEB-INF/tiles/layouts/layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/tiles/components/header.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/components/footer.jsp" />
+		<put-attribute name="quick" value="/WEB-INF/tiles/components/sns_quick.jsp" />
+	</definition>
+
+	<definition name="subLayout" template="/WEB-INF/tiles/layouts/subLayout.jsp">
+		<put-attribute name="header" value="/WEB-INF/tiles/components/header.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/components/footer.jsp" />
+		<put-attribute name="quick" value="/WEB-INF/tiles/components/sns_quick.jsp" />
+	</definition>
+
+	<definition name="*" extends="layout">
+		<put-attribute name="content" value="/WEB-INF/views/{1}.jsp" />
+	</definition>
+	
+	<definition name="intro/*" extends="subLayout">
+		<put-attribute name="content" value="/WEB-INF/views/intro/{1}.jsp" />
+		<put-attribute name="lnb" value="/WEB-INF/tiles/components/intro_lnb.jsp" />
+	</definition>
+
+	<definition name="treatment/*" extends="subLayout">
+		<put-attribute name="content" value="/WEB-INF/views/treatment/{1}.jsp" />
+		<put-attribute name="lnb" value="/WEB-INF/tiles/components/treatment_lnb.jsp" />
+	</definition>
+	
+	<definition name="disease/*" extends="subLayout">
+		<put-attribute name="content" value="/WEB-INF/views/disease/{1}.jsp" />
+		<put-attribute name="lnb" value="/WEB-INF/tiles/components/disease_lnb.jsp" />
+	</definition>
+	
+	<definition name="reservation/*" extends="subLayout">
+		<put-attribute name="content" value="/WEB-INF/views/reservation/{1}.jsp" />
+		<put-attribute name="lnb" value="/WEB-INF/tiles/components/reservation_lnb.jsp" />
+	</definition>
+	
+	<definition name="customerCenter/*" extends="subLayout">
+		<put-attribute name="content" value="/WEB-INF/views/customerCenter/{1}.jsp" />
+		<put-attribute name="lnb" value="/WEB-INF/tiles/components/customerCenter_lnb.jsp" />
+	</definition>
+
+	<definition name="counsel/*" extends="subLayout">
+		<put-attribute name="content" value="/WEB-INF/views/counsel/{1}.jsp" />
+		<put-attribute name="lnb" value="/WEB-INF/tiles/components/counsel_lnb.jsp" />
+	</definition>
+
+	<definition name="expert/*" extends="subLayout">
+		<put-attribute name="content" value="/WEB-INF/views/expert/{1}.jsp" />
+		<put-attribute name="lnb" value="/WEB-INF/tiles/components/expert_lnb.jsp" />
+	</definition>
+	
+	<definition name="footer/*" extends="layout">
+		<put-attribute name="content" value="/WEB-INF/views/footer/{1}.jsp" />
+	</definition>
+	
+	<definition name="qnaBoard/*" extends="subLayout">
+		<put-attribute name="content" value="/WEB-INF/views/qnaBoard/{1}.jsp" />
+		<put-attribute name="lnb" value="/WEB-INF/tiles/components/qnaBoard_lnb.jsp" />
+	</definition>
+	
+</tiles-definitions>
