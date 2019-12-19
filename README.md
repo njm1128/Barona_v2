@@ -12,7 +12,7 @@
 
 - **Client Side**: HTML5, CSS3, JS, Jquery
 - **Server Side**: JSP
-- **Framework**: Spring, Mybatis, Tiles
+- **Framework**: Spring, Mybatis, Bootstrap, Tiles
 - **Database**: Mysql
 - **Server**: Tomcat8
 - **Build**: Maven

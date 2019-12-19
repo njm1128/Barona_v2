@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* 화면별 기본 폰트크기 지정 */
+@media (min-width: 0px) {
+    html, body { font-size: 15px; }
+}
+@media (min-width: 576px) {
+    html, body { font-size: 16px; }
+}
+@media (min-width: 768px) {
+    html, body { font-size: 17px; }
+}
+@media (min-width: 992px) {
+    html, body { font-size: 18px; }
+}
+
+/* container 사이즈 재조정 */
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px !important;
+  }
+}

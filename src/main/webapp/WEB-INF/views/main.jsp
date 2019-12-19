@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 
 <script>
-	/* 팝업 띄우기 */
+	/* 팝업 보이기 */
 	function openPopup() {
 		var cookieCheck01 = getCookie('popup01YN');
 		var cookieCheck02 = getCookie('popup02YN');
@@ -32,151 +32,185 @@
 	  openPopup();
 	  
 	  $('.flexslider').flexslider({
-	    animation: "slide"
+	    animation: "slide",
+	    controlNav: false
 	  });
 	});
 </script>
-<style>
-	.flex-direction-nav a {
-	    display: block;
-	    width: 40px;
-	    height: 40px;
-	    margin: -20px 0 0;
-	    position: absolute;
-	    top: 50%;
-	    z-index: 10;
-	    overflow: hidden;
-	    opacity: 0;
-	    cursor: pointer;
-	    color: rgba(0, 0, 0, 0.8);
-	    text-shadow: none;
-	    -webkit-transition: all 0.3s ease-in-out;
-	    -moz-transition: all 0.3s ease-in-out;
-	    -ms-transition: all 0.3s ease-in-out;
-	    -o-transition: all 0.3s ease-in-out;
-	    transition: all 0.3s ease-in-out;
-	    color: #fff;
-	    background-color: #000;
-	    border-radius: 50%;
-	    text-align: center;
-	}
-	.flex-direction-nav a:before {
-	    font-family: "flexslider-icon";
-	    font-size: 20px;
-	    display: inline-block;
-	    content: '\f001';
-	    color: #FFF;
-	    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
-	    line-height: 40px;
-	}
-	.flex-direction-nav .flex-next {
-	    right: -50px;
-	    text-align: center;
-	}
-</style>
-<!-- container (S) -->
-<div id="container">
-	<!-- visual 배너 영역 -->
+<div class="main_wrap">
+	<!-- visual 영역 -->
 	<div class="main_visual">
-     <div class="flexslider">
+		<div class="flexslider mb-0">
 			  <ul class="slides">
 			    <li>
-			      <img src="${pageContext.request.contextPath}/resources/images/temp/s_visu3.jpg" />
+			      <img src="${pageContext.request.contextPath}/resources/images/main/visual_01.png" />
 			    </li>
 			    <li>
-			      <img src="${pageContext.request.contextPath}/resources/images/temp/s_visu5.jpg" />
+			      <img src="${pageContext.request.contextPath}/resources/images/main/visual_02.png" />
+			    </li>
+			    <li>
+			      <img src="${pageContext.request.contextPath}/resources/images/main/visual_03.png" />
 			    </li>
 			  </ul>
 		 </div>
-    </div>
-    
-    <!-- 통증별 소개 -->
-    <div class="section01">
-		<div>
-			<h2><img src="${pageContext.request.contextPath}/resources/images/main/pain_txt.gif" alt="이런 치료방법이 궁금하시다구요 ?! 어디가 아프세요?"/></h2>
-			<div class="pain">
-				<ul>
-					<li>
-						<a href="${pageContext.request.contextPath}/expert/expert_3.do">
-							<p class="bg_image pain01"><img src="${pageContext.request.contextPath}/resources/images/main/pain_img01.png" /></p>
-							<span class="pain_txt">목 통증</span>
-						</a>
-					</li>
-					<li>
-						<a href="${pageContext.request.contextPath}/expert/expert_1.do">
-							<p class="bg_image pain04"><img src="${pageContext.request.contextPath}/resources/images/main/pain_img07.png" /></p>
-							<span class="pain_txt">팔꿈치 통증</span>
-						</a>
-					</li>
-					<li>
-						<a href="${pageContext.request.contextPath}/expert/expert_2.do">
-							<p class="bg_image pain02"><img src="${pageContext.request.contextPath}/resources/images/main/pain_img02.png" /></p>
-							<span class="pain_txt">어깨 통증</span>
-						</a>
-					</li>
-					<li>
-						<a href="${pageContext.request.contextPath}/disease/disease_4-1.do">
-							<p class="bg_image pain03"><img src="${pageContext.request.contextPath}/resources/images/main/pain_img03.png" /></p>
-							<span class="pain_txt">허리 통증</span>
-						</a>
-					</li>
-					<li>
-						<a href="${pageContext.request.contextPath}/disease/disease_5-1.do">
-							<p class="bg_image pain03"><img src="${pageContext.request.contextPath}/resources/images/main/pain_img08.png" /></p>
-							<span class="pain_txt">엉덩이 통증</span>
-						</a>
-					</li>
-					<li>
-						<a href="${pageContext.request.contextPath}/disease/disease_9-1.do">
-							<p class="bg_image pain05"><img src="${pageContext.request.contextPath}/resources/images/main/pain_img04.png" /></p>
-							<span class="pain_txt">손·손목 통증</span>
-						</a>
-					</li>
-					<li>
-						<a href="${pageContext.request.contextPath}/disease/disease_10-1.do">
-							<p class="bg_image pain06"><img src="${pageContext.request.contextPath}/resources/images/main/pain_img05.png" /></p>
-							<span class="pain_txt">무릎 통증</span>
-						</a>
-					</li>
-					<li>
-						<a href="${pageContext.request.contextPath}/disease/disease_11-1.do">
-							<p class="bg_image pain07"><img src="${pageContext.request.contextPath}/resources/images/main/pain_img06.png" /></p>
-							<span class="pain_txt">발·발목 통증</span>
-						</a>
-					</li>
-				</ul>
+  </div>
+  
+  <!-- 통증별 소개 -->
+  <div class="section_01">
+		<div class="container">
+			<h2 class="main_title"><img src="${pageContext.request.contextPath}/resources/images/main/main_tit_01.png" alt="이런 치료방법이 궁금하시다구요 ?! 어디가 아프세요?"/></h2>
+			
+			<div class="pain_wrap">
+				<div class="pain_left">
+					<ul class="pain_tab">
+						<li class="on">목 통증</li>
+						<li>팔꿈치 통증</li>
+						<li>허리 통증</li>
+						<li>어깨 통증</li>
+						<li>무릎 통증</li>
+						<li>엉덩이 통증</li>
+						<li>손,손목 통증</li>
+						<li>발,발목 통증</li>
+					</ul>
+					
+					<ul class="pain_image">
+						<li><img src="${pageContext.request.contextPath}/resources/images/main/pain_01.png" /></li>
+						<li><img src="${pageContext.request.contextPath}/resources/images/main/pain_02.png" /></li>
+						<li><img src="${pageContext.request.contextPath}/resources/images/main/pain_03.png" /></li>
+						<li><img src="${pageContext.request.contextPath}/resources/images/main/pain_04.png" /></li>
+						<li><img src="${pageContext.request.contextPath}/resources/images/main/pain_05.png" /></li>
+						<li><img src="${pageContext.request.contextPath}/resources/images/main/pain_06.png" /></li>
+						<li><img src="${pageContext.request.contextPath}/resources/images/main/pain_07.png" /></li>
+						<li><img src="${pageContext.request.contextPath}/resources/images/main/pain_08.png" /></li>
+					</ul>
+				</div>
+				
+				<div class="pain_right">
+					<img src="${pageContext.request.contextPath}/resources/images/main/pain_banner.png" />
+				</div>
 			</div>
+		</div>
+	</div>
+  
+  <!-- 치료별 소개 -->
+	<div class="section_02">
+		<div class="container">
+			<ul class="treat_list">
+				<li>
+					<a href="#">
+						<img class="scale" src="${pageContext.request.contextPath}/resources/images/main/banner_01.png" />
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="scale" src="${pageContext.request.contextPath}/resources/images/main/banner_02.png" />
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="scale" src="${pageContext.request.contextPath}/resources/images/main/banner_03.png" />
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="scale" src="${pageContext.request.contextPath}/resources/images/main/banner_04.png" />
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="scale" src="${pageContext.request.contextPath}/resources/images/main/banner_05.png" />
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="scale" src="${pageContext.request.contextPath}/resources/images/main/banner_06.png" />
+					</a>	
+				</li>
+			</ul>
 		</div>
 	</div>
 	
-	<!-- 치료별 소개 -->
-	<div class="section02">
-		<div class="con_wrap03 clearfix">
-			<div class="float banner">
-				<a href="${pageContext.request.contextPath}/treatment/treatment_3.do"><img alt="" src="${pageContext.request.contextPath}/resources/images/main/banner2-1.jpg"></a>
-				<a href="${pageContext.request.contextPath}/treatment/treatment_4.do"><img alt="" src="${pageContext.request.contextPath}/resources/images/main/banner2-2.jpg"></a>       
-			</div>
-			<div class="float banner">
-				<a href="${pageContext.request.contextPath}/treatment/treatment_2.do"><img alt="" src="${pageContext.request.contextPath}/resources/images/main/banner3-1.jpg"></a>                 
-				<a href="${pageContext.request.contextPath}/treatment/treatment_1.do"><img alt="" src="${pageContext.request.contextPath}/resources/images/main/banner3-2.jpg"></a>      
-			</div>
-			<div class="float banner">
-				<a href="${pageContext.request.contextPath}/intro/intro_1.do"><img alt="" src="${pageContext.request.contextPath}/resources/images/main/banner1.jpg"></a>
+	<!-- 병원 위치 안내 -->
+	<div class="section_03">
+		<div class="container">
+			<h2 class="main_title"><img src="${pageContext.request.contextPath}/resources/images/main/main_tit_02.png" alt="이런 치료방법이 궁금하시다구요 ?! 어디가 아프세요?"/></h2>
+			
+			<div class="loc_wrap">
+				<div class="left_area">
+					<a href="https://map.naver.com/v5/search/바로나마취통증의학과의원/place/1540000590?c=14151982.8121903,4414909.0142922,14,0,0,0,dh" target="_blank" title="네이버 지도 보기">
+						<img src="${pageContext.request.contextPath}/resources/images/main/location.png" />
+					</a>
+				</div>
+				
+				<div class="right_area">
+					<div class="right_01">
+						<a class="park_image" href="${pageContext.request.contextPath}/resources/images/main/parking_01.jpg" title="주차장 1">
+							<img src="${pageContext.request.contextPath}/resources/images/main/parking_01.jpg" title="주차장 보기" />	
+						</a>
+						<a class="park_image" href="${pageContext.request.contextPath}/resources/images/main/parking_02.jpg" title="주차장 2">
+							<img src="${pageContext.request.contextPath}/resources/images/main/parking_02.jpg" title="주차장 보기" />	
+						</a>
+						<a class="park_image hide" href="${pageContext.request.contextPath}/resources/images/main/parking_03.jpg" title="주차장 3">
+							<img src="${pageContext.request.contextPath}/resources/images/main/parking_03.jpg" title="주차장 보기" />	
+						</a>
+						<a class="park_image hide" href="${pageContext.request.contextPath}/resources/images/main/parking_04.jpg" title="주차장 4">
+							<img src="${pageContext.request.contextPath}/resources/images/main/parking_04.jpg" title="주차장 보기" />	
+						</a>
+						<a class="park_image hide" href="${pageContext.request.contextPath}/resources/images/main/parking_05.jpg" title="주차장 5">
+							<img src="${pageContext.request.contextPath}/resources/images/main/parking_05.jpg" title="주차장 보기" />	
+						</a>
+						<a class="park_image hide" href="${pageContext.request.contextPath}/resources/images/main/parking_06.jpg" title="주차장 6">
+							<img src="${pageContext.request.contextPath}/resources/images/main/parking_06.jpg" title="주차장 보기" />	
+						</a>
+						<a class="park_image hide" href="${pageContext.request.contextPath}/resources/images/main/parking_07.jpg" title="주차장 7">
+							<img src="${pageContext.request.contextPath}/resources/images/main/parking_07.jpg" title="주차장 보기" />	
+						</a>
+						<a class="park_image hide" href="${pageContext.request.contextPath}/resources/images/main/parking_08.jpg" title="주차장 8">
+							<img src="${pageContext.request.contextPath}/resources/images/main/parking_08.jpg" title="주차장 보기" />	
+						</a>
+						<a class="park_image hide" href="${pageContext.request.contextPath}/resources/images/main/parking_09.jpg" title="주차장 9">
+							<img src="${pageContext.request.contextPath}/resources/images/main/parking_09.jpg" title="주차장 보기" />	
+						</a>
+					</div>
+					
+					<div class="right_02">
+						<img src="${pageContext.request.contextPath}/resources/images/main/time_table.png" />	
+					</div>
+					
+					<div class="right_03">
+						<img src="${pageContext.request.contextPath}/resources/images/main/center.png" />
+					</div>	
+				</div>
 			</div>
 		</div>
 	</div>
-
-	<!-- 안내 사항 -->
-	<div class="section03">
-		<div class="con_wrap02 clearfix" style="border: 1px solid #dedede; font-size: 0;">
-			<div class="float">
-				<img alt="진료시간" src="${pageContext.request.contextPath}/resources/images/main/main_time.jpg" style="border-right: 1px solid #dedede; height: 287px;">
-				<img alt="고객센터" src="${pageContext.request.contextPath}/resources/images/main/main_park.jpg" style="border-right: 1px solid #dedede; height: 287px;">
-			</div>
-			<div class="float">
-				<a href="/intro/intro_3.do"><img alt="오시는길" src="${pageContext.request.contextPath}/resources/images/main/main_map.png"></a>
-			</div>
-		</div>
-	</div>
+  
+  <script>
+  	$(document).ready(function() {
+  		change_pain_image(0);
+  	});
+  	
+  	$('.pain_tab li').hover(function() {
+  		$('.pain_tab li').removeClass('on');
+  		$(this).addClass('on');
+  		
+  		var index = $(this).index();
+  		change_pain_image(index);
+  	}, function() {});
+  	
+  	function change_pain_image(index) {
+ 			$('.pain_image li').hide();
+ 			$('.pain_image li').eq(index).show();
+  	}
+  	
+  	$('.right_area .right_01 .park_image').magnificPopup({
+        type: 'image',
+        closeBtnInside: true,
+        fixedContentPos: true,
+        image: {verticalFit: true},
+        gallery: {enabled: true},
+        zoom: {enabled: true, duration: 400}
+     });
+  	
+  </script>
 </div>
-<!-- container (E) -->

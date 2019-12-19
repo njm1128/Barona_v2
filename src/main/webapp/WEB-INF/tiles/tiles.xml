@@ -3,23 +3,21 @@
 	"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
 
 <tiles-definitions>
-	<definition name="layout" template="/WEB-INF/tiles/layouts/layout.jsp">
-		<put-attribute name="header" value="/WEB-INF/tiles/components/header.jsp" />
-		<put-attribute name="footer" value="/WEB-INF/tiles/components/footer.jsp" />
-		<put-attribute name="quick" value="/WEB-INF/tiles/components/sns_quick.jsp" />
-	</definition>
-
-	<definition name="subLayout" template="/WEB-INF/tiles/layouts/subLayout.jsp">
-		<put-attribute name="header" value="/WEB-INF/tiles/components/header.jsp" />
-		<put-attribute name="footer" value="/WEB-INF/tiles/components/footer.jsp" />
-		<put-attribute name="quick" value="/WEB-INF/tiles/components/sns_quick.jsp" />
-	</definition>
-
-	<definition name="*" extends="layout">
-		<put-attribute name="content" value="/WEB-INF/views/{1}.jsp" />
+	<definition name="empty_layout" template="/WEB-INF/tiles/layouts/empty_layout.jsp">
+		<put-attribute name="html_header" value="/WEB-INF/tiles/components/common/html_header.jsp" />
+		<put-attribute name="html_footer" value="/WEB-INF/tiles/components/common/html_footer.jsp" />
 	</definition>
 	
-	<definition name="intro/*" extends="subLayout">
+	<definition name="basic_layout" template="/WEB-INF/tiles/layouts/basic_layout.jsp" extends="empty_layout">
+		<put-attribute name="header" value="/WEB-INF/tiles/components/header.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/components/footer.jsp" />
+	</definition>
+	
+	<definition name="main" extends="basic_layout">
+		<put-attribute name="content" value="/WEB-INF/views/main.jsp" />
+	</definition>
+	
+	<!-- <definition name="intro/*" extends="subLayout">
 		<put-attribute name="content" value="/WEB-INF/views/intro/{1}.jsp" />
 		<put-attribute name="lnb" value="/WEB-INF/tiles/components/intro_lnb.jsp" />
 	</definition>
@@ -61,6 +59,6 @@
 	<definition name="qnaBoard/*" extends="subLayout">
 		<put-attribute name="content" value="/WEB-INF/views/qnaBoard/{1}.jsp" />
 		<put-attribute name="lnb" value="/WEB-INF/tiles/components/qnaBoard_lnb.jsp" />
-	</definition>
+	</definition> -->
 	
 </tiles-definitions>
