@@ -30,31 +30,9 @@
 	
 	$(window).on('load', function() {
 	  openPopup();
-	  
-	  $('.flexslider').flexslider({
-	    animation: "slide",
-	    controlNav: false
-	  });
 	});
 </script>
 <div class="main_wrap">
-	<!-- visual 영역 -->
-	<div class="main_visual">
-		<div class="flexslider mb-0">
-			  <ul class="slides">
-			    <li>
-			    	<div class="visual_image visual_01"></div>
-			    </li>
-			    <li>
-			    	<div class="visual_image visual_02"></div>
-			    </li>
-			    <li>
-			    	<div class="visual_image visual_03"></div>
-			    </li>
-			  </ul>
-		 </div>
-  </div>
-  
   <!-- 통증별 소개 -->
   <div class="section_01">
 		<div class="container">

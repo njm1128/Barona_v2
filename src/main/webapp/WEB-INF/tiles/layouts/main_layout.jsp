@@ -5,7 +5,7 @@
 <tiles:insertAttribute name="html_header" />	
 <tiles:insertAttribute name="header" />
 <div class="content">
-	<tiles:insertAttribute name="visual_sub" />
+	<tiles:insertAttribute name="visual" />
 	<tiles:insertAttribute name="content" />
 </div>
 <tiles:insertAttribute name="footer" />

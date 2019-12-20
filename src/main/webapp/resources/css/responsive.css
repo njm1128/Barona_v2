@@ -112,7 +112,7 @@
 		font-size: 12px;
 	}
 	
-	.main_wrap .main_visual .visual_image {
+	#visual .visual_image {
 		height: 450px;
 	}
 	

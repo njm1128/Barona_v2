@@ -4,71 +4,71 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/disease")
+@RequestMapping("/ds")
 public class DiseaseController {
 
 	@RequestMapping("disease_1.do")
-	public String godisease_1() {
+	public String goDisease_1() {
 		return "disease/disease_1";
 	}
 
-	@RequestMapping("disease_2-1.do")
-	public String godisease_21() {
+	@RequestMapping("disease_2.do")
+	public String goDisease_2() {
 
-		return "disease/disease_2-1";
+		return "disease/disease_2";
 	}
 
-	@RequestMapping("disease_3-1.do")
-	public String godisease_31() {
+	@RequestMapping("disease_3.do")
+	public String goDisease_3() {
 
-		return "disease/disease_3-1";
+		return "disease/disease_3";
 	}
 
-	@RequestMapping("disease_4-1.do")
-	public String godisease_41() {
+	@RequestMapping("disease_4.do")
+	public String goDisease_4() {
 
-		return "disease/disease_4-1";
+		return "disease/disease_4";
 	}
 
-	@RequestMapping("disease_5-1.do")
-	public String godisease_51() {
+	@RequestMapping("disease_5.do")
+	public String goDisease_5() {
 
-		return "disease/disease_5-1";
+		return "disease/disease_5";
 	}
 	
-	@RequestMapping("disease_6-1.do")
-	public String godisease_61() {
+	@RequestMapping("disease_6.do")
+	public String goDisease_6() {
 		
-		return "disease/disease_6-1";
+		return "disease/disease_6";
 	}
 
-	@RequestMapping("disease_7-1.do")
-	public String godisease_71() {
+	@RequestMapping("disease_7.do")
+	public String goDisease_7() {
 		
-		return "disease/disease_7-1";
+		return "disease/disease_7";
 	}
 	
-	@RequestMapping("disease_8-1.do")
-	public String godisease_81() {
+	@RequestMapping("disease_8.do")
+	public String goDisease_8() {
 		
-		return "disease/disease_8-1";
+		return "disease/disease_8";
 	}
 	
-	@RequestMapping("disease_9-1.do")
-	public String godisease_91() {
+	@RequestMapping("disease_9.do")
+	public String goDisease_9() {
 		
-		return "disease/disease_9-1";
+		return "disease/disease_9";
 	}
 	
-	@RequestMapping("disease_10-1.do")
-	public String godisease_101() {
+	@RequestMapping("disease_10.do")
+	public String goDisease_10() {
 		
-		return "disease/disease_10-1";
+		return "disease/disease_10";
 	}
 	
-	@RequestMapping("disease_11-1.do")
-	public String godisease_111() {
+	@RequestMapping("disease_11.do")
+	public String goDisease_11() {
 		
-		return "disease/disease_11-1";
+		return "disease/disease_11";
 	}
 }

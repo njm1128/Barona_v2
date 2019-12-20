@@ -13,52 +13,40 @@
 		<put-attribute name="footer" value="/WEB-INF/tiles/components/footer.jsp" />
 	</definition>
 	
-	<definition name="main" extends="basic_layout">
+	<definition name="main_layout" template="/WEB-INF/tiles/layouts/main_layout.jsp" extends="basic_layout">
+		<put-attribute name="visual" value="/WEB-INF/tiles/components/visual.jsp" />
+	</definition>
+	
+	<definition name="sub_layout" template="/WEB-INF/tiles/layouts/sub_layout.jsp" extends="basic_layout">
+		<put-attribute name="visual_sub" value="/WEB-INF/tiles/components/visual_sub.jsp" />
+	</definition>
+	
+	<definition name="main" extends="main_layout">
 		<put-attribute name="content" value="/WEB-INF/views/main.jsp" />
 	</definition>
 	
-	<!-- <definition name="intro/*" extends="subLayout">
+	<definition name="intro/*" extends="sub_layout">
 		<put-attribute name="content" value="/WEB-INF/views/intro/{1}.jsp" />
-		<put-attribute name="lnb" value="/WEB-INF/tiles/components/intro_lnb.jsp" />
 	</definition>
 
-	<definition name="treatment/*" extends="subLayout">
-		<put-attribute name="content" value="/WEB-INF/views/treatment/{1}.jsp" />
-		<put-attribute name="lnb" value="/WEB-INF/tiles/components/treatment_lnb.jsp" />
-	</definition>
-	
-	<definition name="disease/*" extends="subLayout">
+	<definition name="disease/*" extends="sub_layout">
 		<put-attribute name="content" value="/WEB-INF/views/disease/{1}.jsp" />
-		<put-attribute name="lnb" value="/WEB-INF/tiles/components/disease_lnb.jsp" />
-	</definition>
-	
-	<definition name="reservation/*" extends="subLayout">
-		<put-attribute name="content" value="/WEB-INF/views/reservation/{1}.jsp" />
-		<put-attribute name="lnb" value="/WEB-INF/tiles/components/reservation_lnb.jsp" />
-	</definition>
-	
-	<definition name="customerCenter/*" extends="subLayout">
-		<put-attribute name="content" value="/WEB-INF/views/customerCenter/{1}.jsp" />
-		<put-attribute name="lnb" value="/WEB-INF/tiles/components/customerCenter_lnb.jsp" />
 	</definition>
 
-	<definition name="counsel/*" extends="subLayout">
-		<put-attribute name="content" value="/WEB-INF/views/counsel/{1}.jsp" />
-		<put-attribute name="lnb" value="/WEB-INF/tiles/components/counsel_lnb.jsp" />
-	</definition>
-
-	<definition name="expert/*" extends="subLayout">
+	<definition name="expert/*" extends="sub_layout">
 		<put-attribute name="content" value="/WEB-INF/views/expert/{1}.jsp" />
-		<put-attribute name="lnb" value="/WEB-INF/tiles/components/expert_lnb.jsp" />
 	</definition>
 	
-	<definition name="footer/*" extends="layout">
-		<put-attribute name="content" value="/WEB-INF/views/footer/{1}.jsp" />
+	<definition name="treatment/*" extends="sub_layout">
+		<put-attribute name="content" value="/WEB-INF/views/treatment/{1}.jsp" />
 	</definition>
 	
-	<definition name="qnaBoard/*" extends="subLayout">
-		<put-attribute name="content" value="/WEB-INF/views/qnaBoard/{1}.jsp" />
-		<put-attribute name="lnb" value="/WEB-INF/tiles/components/qnaBoard_lnb.jsp" />
-	</definition> -->
+	<definition name="counsel/*" extends="sub_layout">
+		<put-attribute name="content" value="/WEB-INF/views/counsel/{1}.jsp" />
+	</definition>
+	
+	<definition name="*/*" extends="sub_layout">
+		<put-attribute name="content" value="/WEB-INF/views/{1}/{2}.jsp" />
+	</definition>
 	
 </tiles-definitions>
