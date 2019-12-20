@@ -15,8 +15,148 @@
 }
 
 /* container 사이즈 재조정 */
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   .container {
     width: 1200px !important;
   }
+}
+
+/* Large devices */
+@media (max-width: 1201px) {
+	#header .gnb_main > ul {
+		width: 100%;
+	}
+	
+	.main_wrap .section_01 .pain_wrap {
+		display: block;
+	}
+	
+	.main_wrap .section_01 .pain_wrap .pain_left {
+		display: block;
+		margin-right: 0;
+    width: 100%;
+	}
+	
+	.main_wrap .section_01 .pain_wrap .pain_left .pain_tab {
+		display: block;
+		height: auto;
+    font-size: 0;
+    border-right: none;
+	}
+	
+	.main_wrap .section_01 .pain_wrap .pain_left .pain_tab li {
+    display: inline-block;   
+    width: 25%;
+    height: 42px;
+    line-height: 37px;
+    text-align: center;
+    font-size: 17px;
+    border: 1px solid #fff;
+	}
+	
+	.main_wrap .section_01 .pain_wrap .pain_left .pain_tab li:last-child {
+		border: 1px solid #fff;
+	}
+	
+	.main_wrap .section_01 .pain_wrap .pain_left .pain_image {
+		height: auto;
+	}
+	
+	.main_wrap .section_01 .pain_wrap .pain_left .pain_image li img {
+		width: 100%;	
+	}
+	
+	.main_wrap .section_01 .pain_wrap .pain_right .lg_image {
+		display: block;
+	}
+	
+	.main_wrap .section_01 .pain_wrap .pain_right .sm_image {
+		display: none;
+	}
+
+}
+
+/* Medium devices */
+@media (max-width: 993px) {
+	
+}
+
+/* Small devices */
+@media (max-width: 769px) {
+	.container {
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+	}
+	
+	#header .top .tel {
+		display: none;
+	}
+	
+	#header .top .util {
+		display: none;
+	}
+	
+	#header .gnb_wrap {
+		display: none;
+	}
+	
+	#header .top {
+    height: 65px;
+	}
+	
+	#header .top .mobile_bar {
+		display: block;
+	}
+	
+	#footer .ft_info {
+		font-size: 12px;
+	}
+	
+	.main_wrap .main_visual .visual_image {
+		height: 450px;
+	}
+	
+	.main_wrap .main_title img {
+		width: 270px;
+	}
+	
+	.main_wrap .section_02 .treat_list li {
+		width: 50%;
+	}
+	
+	.main_wrap .section_03 .loc_wrap {
+		display: block;
+	}
+	
+	.main_wrap .section_03 .left_area {
+    margin-right: 0;
+    width: 100%;
+	}
+	
+	.main_wrap .section_03 .right_area {
+		margin-top: 10px;	
+		width: 100%;
+	}
+}
+
+/* Extra Small devices */
+@media (max-width: 426px) {
+	#header .top .mobile_bar {
+		left: 2px;
+	}	
+	
+	#header .top .logo img {
+		width: 82%;
+	}
+	
+	#footer .ft_info {
+		font-size: 11px;
+	}
+	
+	.main_wrap .section_01 .pain_wrap .pain_left .pain_tab li {
+    width: 50%;
+    font-size: 15px;
+    height: 38px;
+    line-height: 34px;
+	}
 }

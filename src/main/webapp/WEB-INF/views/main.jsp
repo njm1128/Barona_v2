@@ -43,13 +43,13 @@
 		<div class="flexslider mb-0">
 			  <ul class="slides">
 			    <li>
-			      <img src="${pageContext.request.contextPath}/resources/images/main/visual_01.png" />
+			    	<div class="visual_image visual_01"></div>
 			    </li>
 			    <li>
-			      <img src="${pageContext.request.contextPath}/resources/images/main/visual_02.png" />
+			    	<div class="visual_image visual_02"></div>
 			    </li>
 			    <li>
-			      <img src="${pageContext.request.contextPath}/resources/images/main/visual_03.png" />
+			    	<div class="visual_image visual_03"></div>
 			    </li>
 			  </ul>
 		 </div>
@@ -86,7 +86,8 @@
 				</div>
 				
 				<div class="pain_right">
-					<img src="${pageContext.request.contextPath}/resources/images/main/pain_banner.png" />
+					<img class="sm_image" src="${pageContext.request.contextPath}/resources/images/main/pain_banner_sm.png" />
+					<img class="lg_image" src="${pageContext.request.contextPath}/resources/images/main/pain_banner_lg.png" />
 				</div>
 			</div>
 		</div>
@@ -138,17 +139,17 @@
 			<div class="loc_wrap">
 				<div class="left_area">
 					<a href="https://map.naver.com/v5/search/바로나마취통증의학과의원/place/1540000590?c=14151982.8121903,4414909.0142922,14,0,0,0,dh" target="_blank" title="네이버 지도 보기">
-						<img src="${pageContext.request.contextPath}/resources/images/main/location.png" />
+						<img class="scale" src="${pageContext.request.contextPath}/resources/images/main/location.png" />
 					</a>
 				</div>
 				
 				<div class="right_area">
 					<div class="right_01">
 						<a class="park_image" href="${pageContext.request.contextPath}/resources/images/main/parking_01.jpg" title="주차장 1">
-							<img src="${pageContext.request.contextPath}/resources/images/main/parking_01.jpg" title="주차장 보기" />	
+							<img class="scale" src="${pageContext.request.contextPath}/resources/images/main/parking_01.jpg" title="주차장 보기" />	
 						</a>
 						<a class="park_image" href="${pageContext.request.contextPath}/resources/images/main/parking_02.jpg" title="주차장 2">
-							<img src="${pageContext.request.contextPath}/resources/images/main/parking_02.jpg" title="주차장 보기" />	
+							<img class="scale" src="${pageContext.request.contextPath}/resources/images/main/parking_02.jpg" title="주차장 보기" />	
 						</a>
 						<a class="park_image hide" href="${pageContext.request.contextPath}/resources/images/main/parking_03.jpg" title="주차장 3">
 							<img src="${pageContext.request.contextPath}/resources/images/main/parking_03.jpg" title="주차장 보기" />	

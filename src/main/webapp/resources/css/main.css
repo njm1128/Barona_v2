@@ -4,6 +4,11 @@
 ** 공통 Component Style **
 ************************/
 
+html {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
 body {
 	position: relative;
   overflow-x: hidden;
@@ -40,6 +45,10 @@ body {
 
 #header .top .tel img {
 	width: 215px;
+}
+
+#header .top .logo {
+	text-align: center;
 }
 
 #header .top .util {
@@ -81,6 +90,14 @@ body {
 
 #header .top .util li a:hover {
 	color: #e35473;
+}
+
+#header .top .mobile_bar {
+	display: none;
+	position: absolute;
+  left: 30px;
+  top: 50%;
+  margin-top: -9px;
 }
 
 #header .gnb_wrap {
@@ -175,16 +192,104 @@ body {
 	display: none;
 }
 
+#header .gnb_mobile_menu {
+	position: absolute;
+	display: block;
+	left: -100%;
+	top: 67px;
+	width: 100%;
+	margin-right: 0;
+	height: 100%;
+	padding: 0;
+	z-index: 9999;
+	background-color: #fff;
+}
+
+#header .gnb_mobile_menu .gnb_inner {
+	position: relative;
+	background-color: #fff;
+	padding: 0;
+	overflow-y: auto;
+}
+
+#header .gnb_mobile_menu .menu_left {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+
+#header .gnb_mobile_menu .menu_left>li {
+	overflow: hidden;
+	border-top: #f6f7fa 1px solid;
+}
+
+#header .gnb_mobile_menu .menu_left>li>a {
+	position: relative;
+	display: block;
+	line-height: 41px;
+	padding: 0 40px 0 20px;
+	background-color: #fff;
+	font-size: 15px;
+	color: #333;
+	margin-top: -1px;
+	text-decoration: none;
+}
+
+#header .gnb_mobile_menu .menu_left>li.on>a {
+	color: #e35473;
+}
+
+#header .gnb_mobile_menu .menu_left>li>ul {
+	list-style: none;
+	background-color: #f6f7fa;
+	overflow: hidden;
+	padding: 0;
+}
+
+#header .gnb_mobile_menu .menu_left>li>ul>li {
+	float: left;
+	width: 50%;
+	border-bottom: #eaeaea 1px solid;
+	border-right: #eaeaea 1px solid;
+}
+
+#header .gnb_mobile_menu .menu_left>li>ul>li>a {
+	position: relative;
+	padding: 1px 20px;
+	display: block;
+	font-size: 13px;
+	color: #757575;
+	line-height: 33px;
+	text-decoration: none;
+}
+
+#header .gnb_mobile_menu .menu_left>li>a:after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 10px;
+	height: 10px;
+	top: 50%;
+	right: 20px;
+	margin-top: -5px;
+	background: url(../images/commons/ico_menu_off.png) 50% 50% no-repeat;
+	background-size: 10px 10px;
+}
+
+#header .gnb_mobile_menu .menu_left>li.on>a:after {
+	background: url(../images/commons/ico_menu_on.png) 50% 50% no-repeat;
+	background-size: 10px 2px;
+}
+
 /* footer style */
 #footer {
 	position: relative; 
 	width: 100%; 
-	height: 174px;
 	background: #434343; 
 }
 
 #footer .ft_info {
-	 padding: 30px 0 0; 
+	 padding: 30px 0; 
 	 color: #e1e1e1; 
 	 font-size: 13px; 
 	 line-height: 23px;

@@ -21,6 +21,12 @@
 					<%-- <li><a href="${pageContext.request.contextPath}/intro/intro_3.do">오시는길</a></li> --%>
 				</ul>
 			</div>
+			<!-- mobile menu bar -->
+			<div class="mobile_bar">
+				<a href="javascript:show_mobile_menu()">
+					<img src="${pageContext.request.contextPath }/resources/images/commons/btn_menu_bar.png" />
+				</a>
+			</div>
 		</div>
 	</div>
 	
@@ -215,5 +221,99 @@
 			</script>
 		</div>
 	</div>
+	
+	<!-- mobile menu start -->
+	<div class="gnb_mobile_menu">
+		<div class="gnb_inner">
+			<ul class="menu_left">
+				<li class="menu1"><a href="#">병원소개</a>
+					<ul class="sub_menu">
+						<li><a href="${pageContext.request.contextPath }/m/intro/intro_1.do">바로나 소개</a></li>
+            <li><a href="${pageContext.request.contextPath }/m/intro/intro_2.do">진료시간</a></li>
+            <li><a href="${pageContext.request.contextPath }/m/intro/intro_3.do">찾아오시는 길</a></li>
+            <li><a href="${pageContext.request.contextPath }/m/intro/intro_4.do">병원 내부안내</a></li>
+            <li><a href="${pageContext.request.contextPath }/m/intro/intro_5.do">의료장비 소개</a></li>
+					</ul>
+				</li>
+				<li class="menu2"><a href="#">통증클리닉</a>
+					<ul class="sub_menu">
+						<li><a href="${pageContext.request.contextPath }/m/disease/disease_1.do">두통</a></li>
+            <li><a href="${pageContext.request.contextPath }/m/disease/disease_2.do">목통증</a></li>
+            <li><a href="${pageContext.request.contextPath }/m/disease/disease_3.do">등통증</a></li>
+            <li><a href="${pageContext.request.contextPath }/m/disease/disease_4.do">어깨 통증</a></li>
+            <li><a href="${pageContext.request.contextPath }/m/disease/disease_5.do">팔꿈치 통증</a></li>
+            <li><a href="${pageContext.request.contextPath }/m/disease/disease_6.do">허리 통증</a></li>
+            <li><a href="${pageContext.request.contextPath }/m/disease/disease_7.do">무릎 통증</a></li>
+            <li><a href="${pageContext.request.contextPath }/m/disease/disease_8.do">엉덩이 통증</a></li>
+            <li><a href="${pageContext.request.contextPath }/m/disease/disease_9.do">사타구니 통증</a></li>
+            <li><a href="${pageContext.request.contextPath }/m/disease/disease_10.do">손목/손가락 통증</a></li>
+            <li><a href="${pageContext.request.contextPath }/m/disease/disease_11.do">발목/발가락 통증</a></li>
+					</ul>
+				</li>
+				<li class="menu3"><a href="#">전문클리닉</a>
+					<ul class="sub_menu">
+						<li><a href="${pageContext.request.contextPath }/m/expert/expert_1.do">팔꿈치 통증</a></li>
+						<li><a href="${pageContext.request.contextPath }/m/expert/expert_2.do">어깨 통증</a></li>
+						<li><a href="${pageContext.request.contextPath }/m/expert/expert_3.do">목 통증</a></li>
+						<li><a href="${pageContext.request.contextPath }/m/expert/expert_4.do">대상포진</a></li>
+					</ul>
+				</li>
+				<li class="menu4"><a href="#">치료법</a>
+					<ul class="sub_menu">
+						<li><a href="${pageContext.request.contextPath }/m/treatment/treatment_1.do">프롤로 치료</a></li>
+						<li><a href="${pageContext.request.contextPath }/m/treatment/treatment_2.do">스톨스체외 충격파치료</a></li>
+						<li><a href="${pageContext.request.contextPath }/m/treatment/treatment_3.do">수면 신경치료</a></li>
+						<li><a href="${pageContext.request.contextPath }/m/treatment/treatment_4.do">무릎 유전자 치료</a></li>
+					</ul>
+				</li>
+				<li class="menu5"><a href="#">상담 &amp; 예약</a>
+					<ul class="sub_menu">
+						<li><a href="${pageContext.request.contextPath }/m/counsel/notice_list.do">공지사항</a></li>
+						<li><a href="${pageContext.request.contextPath }/m/counsel/faq_list.do">자주하는질문</a></li>
+					</ul>
+				</li>
+				<li class="menu6"><a href="${pageContext.request.contextPath }/admin/login.do?mobile=y">관리자</a></li>
+			</ul>
+		</div>
+		
+		<script>
+		$(document).on("click", ".gnb_mobile_menu .menu_left > li > a", subMenu);
+
+		function show_mobile_menu() {
+			$(".gnb_mobile_menu .sub_menu").slideUp(200);
+			$(".gnb_mobile_menu .menu_left li").removeClass("on");
+
+			$('#header .mobile_bar').toggleClass("open");
+
+			if (!$('#header .mobile_bar').hasClass("open")) {
+				$(".gnb_mobile_menu").stop().animate({
+					left : '-100%'
+				}, 250);
+			} else {
+				$(".gnb_mobile_menu").stop().animate({
+					left : 0
+				}, 250);
+			}
+		}
+
+		function subMenu(e) {
+			$thisp = $(this).parent();
+
+			$(".gnb_mobile_menu .menu_left > li").removeClass("on");
+
+			var dropDown = $(this).next(".sub_menu");
+			$(".gnb_mobile_menu .sub_menu").not(dropDown).slideUp("fast");
+			dropDown.stop(false, true).slideToggle("fast", function() {
+				if ($(this).is(":hidden")) {
+					$thisp.removeClass("on");
+				} else {
+					$thisp.addClass("on");
+				}
+			});
+		}
+		</script>
+	</div>
+	<!-- mobile menu end -->
+	
 </div>
 <!-- header (E) -->

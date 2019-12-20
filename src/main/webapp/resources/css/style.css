@@ -9,9 +9,24 @@
 	text-align: center;
 }
 
-.main_wrap .main_visual img {
+.main_wrap .main_visual .visual_image {
 	width: 100%;
+	height: 520px;
   max-width: 1600px;
+  background-repeat: no-repeat;
+  background-position: center center; 
+}
+
+.main_wrap .main_visual .visual_01 {
+	background-image: url('../images/main/visual_01.png');
+}
+
+.main_wrap .main_visual .visual_02 {
+	background-image: url('../images/main/visual_02.png');
+}
+
+.main_wrap .main_visual .visual_03 {
+	background-image: url('../images/main/visual_03.png');
 }
 
 .main_wrap .main_title {
@@ -68,17 +83,22 @@
 	display: none;
 }
 
+.main_wrap .section_01 .pain_wrap .pain_right img {
+	width: 100%;	
+}
+
+.main_wrap .section_01 .pain_wrap .pain_right .lg_image {
+	display: none;
+}
+
 .main_wrap .section_02 .treat_list {
 	display: flex;
   flex-wrap: wrap;
 }
 
 .main_wrap .section_02 .treat_list li {
+	overflow: hidden;
 	width: 33.3%;
-}
-
-.main_wrap .section_02 .treat_list li:hover {
-	z-index: 1;
 }
 
 .main_wrap .section_02 .treat_list li img {
@@ -95,6 +115,7 @@
 }
 
 .main_wrap .section_03 .left_area {
+	overflow: hidden;
 	margin-right: 10px;
   width: 62%;
 }
@@ -114,6 +135,7 @@
 }
 
 .main_wrap .section_03 .right_area .right_01 .park_image {
+	overflow: hidden;
 	width: 49%;
 }
 
@@ -159,13 +181,12 @@
   -ms-transform: scale(1);
   -o-transform: scale(1);
   transition: all 0.3s ease-in-out;   
-  z-index: 100;
 }
 
 .scale:hover {
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
 }
