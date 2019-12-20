@@ -131,6 +131,81 @@
 	width: 100%;
 }
 
+.sub_wrap {
+	margin: 0 0 40px;
+}
+
+.sub_wrap .sub_title {
+	margin-top: 2.5rem;
+  padding: 20px 0 20px 58px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #2b2b2b;
+  background: url(../images/commons/ico_logo.png) no-repeat left center;
+  background-size: 45px;
+  letter-spacing: -0.3px;
+  text-shadow: 0.3px 0.6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.sub_wrap .sub_title_desc {
+  padding-left: 4px;
+  padding-bottom: 8px;
+  font-size: 1.1rem;
+	border-bottom: 7px solid #f4f4f4;
+	line-height: 150%;
+  letter-spacing: -0.4px;
+  text-shadow: 0.4px 0.9px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sub_wrap .banner_sub {
+  margin: 20px 0 30px;
+  height: 300px;
+  background: url(../images/commons/banner_sub.png) no-repeat center center;
+  background-size: cover;
+}
+
+.sub_wrap .image_wrap {
+	text-align: center;
+}
+
+.sub_wrap .image_wrap img {
+	margin: 20px 0;
+	width: 100%;
+}
+
+/* slider style */
+.slider_wrap {
+	margin: 40px 0 10px;
+}
+.slider_wrap .slider_img img {
+	width: 100%;
+}
+
+.slider_wrap .slider {
+	margin: 20px 0 0;
+	font-size: 0;
+}
+
+.slider_wrap .slider a {
+	display: inline-block;
+  margin: 0 5px 8px;
+  width: calc(100% / 6 - 10px);
+}
+
+.slider_wrap .slider a img {
+	width: 100%;
+  border: 3px solid #3e3e3e;
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.4);
+}
+
+.slider_wrap .slider a:hover img {
+	border-color: #df4064;
+}
+
+.slider_wrap .slider a.on img {
+	border-color: #e35473;
+}
+
 /********************
 ***** 공통 Style *****
 ********************/

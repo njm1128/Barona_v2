@@ -320,6 +320,7 @@ body {
 
 /* visual_sub style */
 #visual.visual_sub .visual_image {
+	margin: 0 auto;
 	height: 430px;
 }
 

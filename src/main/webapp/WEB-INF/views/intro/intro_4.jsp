@@ -1,28 +1,29 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<div id="content">
-	<div class="sub_page">
-		<h1><img src="${pageContext.request.contextPath }/resources/images/commons/tit_sub.jpg"/></h1>
-		<h2><img src="${pageContext.request.contextPath }/resources/images/intro/tit_intro_4.jpg"/></h2>
+
+<div class="sub_wrap">
+	<div class="container">
+		<h2 class="sub_title">병원내부 안내</h2>
+		<p class="sub_title_desc">바로나 마취통증의학과는 몸의 통증 뿐만 아니라 마음의 통증도 치료합니다.</p>
 		
 		<div class="slider_wrap">
 			<div class="slider_img"><img src="${pageContext.request.contextPath }/resources/images/hospital/hospital_1.jpg" alt="" /></div>
 			<div class="slider">
 				<c:forEach var="idx" begin="1" end="15">
-					<a href="${pageContext.request.contextPath }/resources/images/hospital/hospital_${idx}.jpg">
-						<img src="${pageContext.request.contextPath }/resources/images/hospital/hospital_${idx}.jpg" alt="" />
-					</a>
-			  	</c:forEach>
+				<a href="${pageContext.request.contextPath }/resources/images/hospital/hospital_${idx}.jpg">
+					<img src="${pageContext.request.contextPath }/resources/images/hospital/hospital_${idx}.jpg" alt="" />
+				</a>
+		  	</c:forEach>
 			</div>
 		</div>
 	</div>
+	
 	<script>
 	    var current = 1;
 	    $(".slider a").eq(current - 1).addClass("on");
 	    var interval = setInterval("interMove()", 4000);
-		var count = $(".slider a").last().index() + 1;
+			var count = $(".slider a").last().index() + 1;
 		
 	    function interMove() {
 	        if (current < count) {
@@ -42,16 +43,16 @@
 	
 	    function effectimg(str, path) {
 	        str.attr("src", path)
-	       .css({ opacity: 0 })
+	       .css({ opacity: 0.6 })
 	       .stop()
-	       .animate({ opacity: 1 }, 500);
+	       .animate({ opacity: 1 }, 1200);
 	    }
 	
 	    $(".slider a").hover(function () {
 	        clearInterval(interval);
 	    },
 	    function(){
-	        interval = setInterval("interMove()", 2000);
+	        interval = setInterval("interMove()", 4000);
 	    });
 	
 	    $(".slider a").click(function (e) {

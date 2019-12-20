@@ -19,6 +19,10 @@
   .container {
     width: 1200px !important;
   }
+  
+  .sub_wrap .container {
+    width: 1000px !important;
+  }
 }
 
 /* Large devices */
@@ -137,6 +141,14 @@
 		margin-top: 10px;	
 		width: 100%;
 	}
+	
+	.slider_wrap .slider a {
+		width: calc(100% / 4 - 10px);
+	}
+	
+	.sub_image_100 {
+		width: 100% !important; 
+	}
 }
 
 /* Extra Small devices */
@@ -158,5 +170,9 @@
     font-size: 15px;
     height: 38px;
     line-height: 34px;
+	}
+	
+	.slider_wrap .slider a {
+		width: calc(100% / 3 - 10px);
 	}
 }
