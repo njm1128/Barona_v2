@@ -132,7 +132,7 @@
 }
 
 .sub_wrap {
-	margin: 0 0 40px;
+	margin: 0 0 50px;
 }
 
 .sub_wrap .sub_title {
@@ -173,6 +173,19 @@
 	width: 100%;
 }
 
+.sub_wrap .txt_desc {
+	padding: 10px 15px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 150%;
+  text-align: left;
+  color: #3e3e3e;
+}
+
+.sub_wrap .txt_desc b {
+	color: #c30505;
+}
+
 /* slider style */
 .slider_wrap {
 	margin: 40px 0 10px;
@@ -211,6 +224,13 @@
 ********************/
 .hide {
 	display: none;
+}
+
+.line_div {
+	display: block;
+	margin: 20px 0;
+	height: 7px;
+	background: #f4f4f4;
 }
 
 .scale {
