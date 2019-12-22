@@ -132,11 +132,11 @@ body {
   line-height: 55px;
   color: #5c5956;
   font-size: 17px;
+  font-weight: 600;
 }
 
 #header .gnb_main > ul > li > a:hover {
   color: #e35473;
-  font-weight: 500;
 }
 
 #header .gnb_sub {
@@ -159,7 +159,7 @@ body {
 #header .gnb_sub .sub_list {
 	display: none;
 	padding-top: 15px;
-	width: 15.2%;
+	width: 15.1%;
 	vertical-align: top;
 }
 

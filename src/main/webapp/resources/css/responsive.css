@@ -2,10 +2,10 @@
 
 /* 화면별 기본 폰트크기 지정 */
 @media (min-width: 0px) {
-    html, body { font-size: 15px; }
+    html, body { font-size: 14px; }
 }
 @media (min-width: 576px) {
-    html, body { font-size: 16px; }
+    html, body { font-size: 15px; }
 }
 @media (min-width: 768px) {
     html, body { font-size: 17px; }
@@ -92,6 +92,14 @@
 		padding-right: 15px !important;
 	}
 	
+	.pc_ver {
+		display: none;
+	}
+	
+	.mobile_ver {
+		display: block;
+	}
+	
 	#header .top .tel {
 		display: none;
 	}
@@ -142,6 +150,25 @@
 		width: 100%;
 	}
 	
+	.tab_wrap.bottom_tab .tab_banner .left_area {
+		width: 100%;
+		flex: auto;
+	}
+	
+	.tab_wrap.bottom_tab .tab_banner .left_area .left_01 {
+		padding: 15px;
+	}
+	
+	.tab_wrap.bottom_tab .tab_banner .left_area .left_02 {
+		padding: 3px;
+	}
+	
+	.tab_wrap.bottom_tab .tab_banner .right_area {
+		width: 100%;
+		order: 0;
+		flex: auto;
+	}
+	
 	.slider_wrap .slider a {
 		width: calc(100% / 4 - 10px);
 	}
@@ -149,6 +176,7 @@
 	.sub_image_100 {
 		width: 100% !important; 
 	}
+	
 }
 
 /* Extra Small devices */
@@ -175,4 +203,9 @@
 	.slider_wrap .slider a {
 		width: calc(100% / 3 - 10px);
 	}
+	
+	.tab_wrap .tab_list li {
+		width: 50%;
+	}
+	
 }

@@ -157,6 +157,40 @@
   text-shadow: 0.4px 0.9px 0 rgba(0, 0, 0, 0.2);
 }
 
+.sub_wrap .section_title {
+  margin-top: 1rem;
+  padding: 10px 0 10px 60px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #3a3a3a;
+  text-align: left;
+  background: url(../images/commons/ico_section_title.png) no-repeat left center;
+  background-size: 45px;
+  letter-spacing: -0.3px;
+  text-shadow: 0.3px 0.6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.sub_wrap .section_sub_title {
+  margin-top: 1rem;
+  padding: 10px 4px;
+  font-size: 1.4rem;
+  color: #3a3a3a;
+  text-align: left;
+  letter-spacing: -0.3px;
+  text-shadow: 0.3px 0.6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.sub_wrap .section_desc {
+  padding: 6px 4px;
+  color: #595959;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 145%;
+  text-align: left;
+  letter-spacing: -0.4px;
+  text-shadow: 0.4px 0.9px 0 rgba(0, 0, 0, 0.5);
+}
+
 .sub_wrap .banner_sub {
   margin: 20px 0 30px;
   height: 300px;
@@ -184,6 +218,93 @@
 
 .sub_wrap .txt_desc b {
 	color: #c30505;
+}
+
+/* tab style */
+.tab_wrap {
+  margin-top: 10px;
+}
+
+.tab_wrap .tab_list {
+	font-size: 0;
+}
+
+.tab_wrap .tab_list li {
+	display: inline-block;
+	width: 25%;
+  text-align: center;
+  border: 1px solid #d9d9d9;
+  background: #f4f4f4;
+}
+
+.tab_wrap .tab_list li.on {
+	border: 1px solid #342127;
+	background: #3d262e;
+}
+
+.tab_wrap .tab_list li a {
+	display: block;
+	padding: 11px 0 12px;
+  font-size: 0.9rem;
+  color: #4e4e4e;
+}
+
+.tab_wrap .tab_list li.on a {
+	color: #fff;
+}
+
+.tab_wrap.bottom_tab .tab_banner {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.tab_wrap.bottom_tab .tab_banner .left_area {
+	flex: 1;
+	order: 1;
+}
+
+.tab_wrap.bottom_tab .tab_banner .left_area .left_01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	height: 22%;
+  text-align: center;
+  background: #3d3d3d;
+}
+
+.tab_wrap.bottom_tab .tab_banner .left_area .left_01 img {
+	width: 70%;
+}
+
+.tab_wrap.bottom_tab .tab_banner .left_area .left_02 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	height: 78%;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.tab_wrap.bottom_tab .tab_banner .left_area .left_02 img {
+	width: 75%;
+}
+
+.tab_wrap.bottom_tab .tab_banner .right_area {
+	flex: 1;
+	order: 2;
+}
+
+.tab_wrap.bottom_tab .tab_banner .right_area .image_list {
+	
+}
+
+.tab_wrap.bottom_tab .tab_banner .right_area .image_list li {
+	
+}
+
+.tab_wrap.bottom_tab .tab_banner .right_area .image_list li img {
+	width: 100%;
 }
 
 /* slider style */
@@ -223,6 +344,14 @@
 ***** 공통 Style *****
 ********************/
 .hide {
+	display: none;
+}
+
+.pc_ver {
+	display: block;
+}
+	
+.mobile_ver {
 	display: none;
 }
 
