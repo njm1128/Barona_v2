@@ -33,7 +33,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="${pageContext.request.contextPath }/resources/plugin/flexslider/jquery.flexslider-min.js"></script>
 <script src="${pageContext.request.contextPath }/resources/plugin/magnific-popup/magnific-popup.min.js"></script>
-<script src="${pageContext.request.contextPath }/resources/js/cookie.js?ver=${ver}"></script>
 </head>
 <body>
 	<!-- wrapper (S) -->

@@ -18,13 +18,10 @@ public class AdminLoginController {
 	}
 	
 	@RequestMapping(value="login.do", method=RequestMethod.POST)
-	public String login(String mobile, String id, String pwd, HttpSession session, Model model) {
+	public String login(String id, String pwd, HttpSession session, Model model) {
 		if(id.equals("admin") && pwd.equals("barona")) {
 			session.setAttribute("isLogin", true);
-			if(mobile != null && mobile.equals("y"))
-				return "redirect:/m/admin/notice/list.do?menu_code=01";
-			else
-				return "redirect:/admin/notice/list.do?menu_code=01";
+			return "redirect:/admin/notice/list.do?menu_code=01";
 		} else {
 			model.addAttribute("msg", "아이디 또는 비밀번호를 다시 확인해주세요.");
 			return "admin/login";

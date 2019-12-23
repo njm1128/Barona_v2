@@ -21,10 +21,9 @@
 <meta property="og:url" content="http://www.thebarona.com">
 <title>바로나통증의학과 관리자</title>
 <link href="${pageContext.request.contextPath }/resources/css/admin.css?ver=${ver}" rel="stylesheet">
-<link href="${pageContext.request.contextPath }/resources/css/sub.css?ver=${ver}" rel="stylesheet">
+<link href="${pageContext.request.contextPath }/resources/css/style.css?ver=${ver}" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="${pageContext.request.contextPath }/resources/js/cookie.js?ver=${ver}"></script>
 </head>
 <body>
 	<!-- wrapper (S) -->

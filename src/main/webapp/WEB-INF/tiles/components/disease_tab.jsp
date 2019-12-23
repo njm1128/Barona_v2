@@ -36,5 +36,6 @@
 		<li>
 			<a href="#">발목/발가락 통증</a>
 		</li>
+		<li><a href="#" onclick="return false" class="cursor-default">-</a></li>
 	</ul>
 </div>

@@ -25,26 +25,6 @@
 		<put-attribute name="content" value="/WEB-INF/views/main.jsp" />
 	</definition>
 	
-	<definition name="intro/*" extends="sub_layout">
-		<put-attribute name="content" value="/WEB-INF/views/intro/{1}.jsp" />
-	</definition>
-
-	<definition name="disease/*" extends="sub_layout">
-		<put-attribute name="content" value="/WEB-INF/views/disease/{1}.jsp" />
-	</definition>
-
-	<definition name="expert/*" extends="sub_layout">
-		<put-attribute name="content" value="/WEB-INF/views/expert/{1}.jsp" />
-	</definition>
-	
-	<definition name="treatment/*" extends="sub_layout">
-		<put-attribute name="content" value="/WEB-INF/views/treatment/{1}.jsp" />
-	</definition>
-	
-	<definition name="counsel/*" extends="sub_layout">
-		<put-attribute name="content" value="/WEB-INF/views/counsel/{1}.jsp" />
-	</definition>
-	
 	<definition name="*/*" extends="sub_layout">
 		<put-attribute name="content" value="/WEB-INF/views/{1}/{2}.jsp" />
 	</definition>

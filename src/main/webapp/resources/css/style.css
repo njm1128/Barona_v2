@@ -509,7 +509,7 @@
 	background-color: #25b3ed;
 }
 .tbl-faq td.type {
-	padding: 0 10px 10px;
+	padding: 0 10px;
 	width: 17%;
 	font-family: Noto Sans;
   font-weight: 700;
@@ -541,15 +541,19 @@
 	height: 50px;
 }
 .tbl-faq td input {
-	width: 100%;
-	height: 23px;
-	font-size: 13px;
+  padding: 0 8px;
+  width: calc(100% - 16px);
+  height: 23px;
+  font-size: 13px;
+  outline: none;
 }
 .tbl-faq td textarea {
-	width: 100%;
+	padding: 5px 8px;
+	width: calc(100% - 16px);
 	min-height: 120px;
 	font-size: 13px;
 	resize: none;	
+	outline: none;
 }
 .tbl-reg {
 	display: none;
@@ -566,24 +570,27 @@
   color: #1f1f1f;
   font-size: 16px;
   font-weight: 600;
+  outline: none;
 }
 .btn_big {
 	display: inline-block;
-    background: #fcfcfc;
-    border: 1px solid #bcbcbc;
-    padding: 10px 50px;
-    color: #1f1f1f;
-    font-weight: 600;
+  background: #fcfcfc;
+  border: 1px solid #bcbcbc;
+  padding: 10px 50px;
+  color: #1f1f1f;
+  font-weight: 600;
+  outline: none;
 }
 .btn_sm {
 	display: inline-block;
-    background: #fcfcfc;
-    border: 1px solid #bcbcbc;
-    padding: 2px 5px;
-    color: #1f1f1f;
-    font-weight: 600;
-    font-size: 11px;
-    border-radius: 3px;
+  background: #fcfcfc;
+  border: 1px solid #bcbcbc;
+  padding: 2px 5px;
+  color: #1f1f1f;
+  font-weight: 600;
+  font-size: 11px;
+  border-radius: 3px;
+  outline: none;
 }
 
 .paging {
@@ -618,6 +625,10 @@
 
 .cursor {
 	cursor: pointer;
+}
+
+.cursor-default {
+	cursor: default;
 }
 
 .pc_ver {

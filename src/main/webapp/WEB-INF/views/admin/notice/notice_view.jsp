@@ -5,39 +5,42 @@
 
 <div id="container">
 	<div class="content">
-		<h2><img src="${pageContext.request.contextPath }/resources/images/counsel/tit_notice.jpg"/></h2>
+		<div class="sub_wrap">
+			<h2 class="sub_title">공지사항</h2>
+			<p class="sub_title_desc">바로나 마취통증의학과는 몸의 통증 뿐만 아니라 마음의 통증도 치료합니다.</p>
 		
-		<table class="tbl-view">
-			<tr>
-				<th width="10%">제목</th>
-				<td width="60%">${notice.noticeTitle }</td>
-				<th width="10%">등록일</th>
-				<fmt:parseDate var="noticeRegdate" value="${notice.noticeRegdate }" pattern="yyyy-MM-dd kk:mm" />
-				<td width="20%"><fmt:formatDate value="${noticeRegdate }" pattern="yyyy-MM-dd kk:mm" /></td>
-			</tr>
-			<tr>
-				<th>글쓴이</th>
-				<td>바로나 관리자</td>
-				<th>조회</th>
-				<td>${notice.noticeHit }</td>
-			</tr>
-			<tr>
-				<th valign="top">내용</th>
-				<td id="noticeContent" colspan="3" valign="top" style="padding: 10px; height: 200px; line-height: 160%;">${notice.noticeContent }</td>
-			</tr>
-		</table>
-		<form role="form" method="get">
-			<input type="hidden" name="no" value="${notice.noticeNo }" />
-			<input type="hidden" name="page" value="${cri.page }" />
-			<input type="hidden" name="perPageNum" value="${cri.perPageNum }" />
-			<input type="hidden" name="searchType" value="${cri.searchType }" />
-			<input type="hidden" name="keyword" value="${cri.keyword }" />
-			<input type="hidden" name="menu_code" value="${menu_code }" />
-		</form>
-					
-		<button class="btn_list" id="list">목록</button>
-		<button class="btn_list" id="modify">수정</button>
-		<button class="btn_list" id="remove">삭제</button>
+			<table class="tbl-view">
+				<tr>
+					<th width="10%">제목</th>
+					<td width="60%">${notice.noticeTitle }</td>
+					<th width="10%">등록일</th>
+					<fmt:parseDate var="noticeRegdate" value="${notice.noticeRegdate }" pattern="yyyy-MM-dd kk:mm" />
+					<td width="20%"><fmt:formatDate value="${noticeRegdate }" pattern="yyyy-MM-dd kk:mm" /></td>
+				</tr>
+				<tr>
+					<th>글쓴이</th>
+					<td>관리자</td>
+					<th>조회</th>
+					<td>${notice.noticeHit }</td>
+				</tr>
+				<tr>
+					<th valign="top">내용</th>
+					<td id="noticeContent" colspan="3" valign="top" style="padding: 10px; height: 200px; line-height: 160%;">${notice.noticeContent }</td>
+				</tr>
+			</table>
+			<form role="form" method="get">
+				<input type="hidden" name="no" value="${notice.noticeNo }" />
+				<input type="hidden" name="page" value="${cri.page }" />
+				<input type="hidden" name="perPageNum" value="${cri.perPageNum }" />
+				<input type="hidden" name="searchType" value="${cri.searchType }" />
+				<input type="hidden" name="keyword" value="${cri.keyword }" />
+				<input type="hidden" name="menu_code" value="${menu_code }" />
+			</form>
+						
+			<button class="btn_list" id="list">목록</button>
+			<button class="btn_list" id="modify">수정</button>
+			<button class="btn_list" id="remove">삭제</button>
+		</div>
 	</div>
 	<script>
 		console.log($('#noticeContent').text());
@@ -51,7 +54,7 @@
 			form.submit();
 		});
 		$('#remove').on('click', function() {
-			var result = confirm('이 게시글을 삭제하시겠습니까 ?');
+			var result = confirm('이 공지사항을 삭제하시겠습니까 ?');
 			if(result) {
 				form.attr("action", "remove.do");
 				form.attr("method", "post");

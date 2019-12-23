@@ -15,7 +15,7 @@
 }
 
 /* container 사이즈 재조정 */
-@media (min-width: 1201px) {
+@media (min-width: 1200px) {
   .container {
     width: 1200px !important;
   }
