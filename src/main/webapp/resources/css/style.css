@@ -199,6 +199,7 @@
 }
 
 .sub_wrap .image_wrap {
+	overflow: hidden;
 	text-align: center;
 }
 
@@ -338,6 +339,38 @@
 
 .slider_wrap .slider a.on img {
 	border-color: #e35473;
+}
+
+.loc_box {
+ 	display: flex;
+ 	margin: 10px 0 25px;
+  padding: 25px;
+  background: #eae3de;
+  border-radius: 25px;
+}
+
+.loc_box .loc_image img {
+	margin: 0;
+}
+
+.loc_box .loc_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+  text-align: left;
+  line-height: 150%;
+}
+
+.loc_box .loc_text h4 {
+	font-size: 22px;
+  color: #3c2f28;
+}
+
+.loc_box .loc_text p {
+  margin: 11px 0;
+	color: #3d2e26;
+	font-weight: 500;
 }
 
 .top-srh {
@@ -629,6 +662,10 @@
 
 .cursor-default {
 	cursor: default;
+}
+
+.underline {
+	text-decoration: underline;
 }
 
 .pc_ver {
