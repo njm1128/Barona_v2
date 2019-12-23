@@ -18,7 +18,6 @@
 				<ul>
 					<li><a href="${pageContext.request.contextPath}/main.do">홈</a></li>
 					<li><a href="${pageContext.request.contextPath}/admin/login.do">관리자</a></li>
-					<%-- <li><a href="${pageContext.request.contextPath}/intro/intro_3.do">오시는길</a></li> --%>
 				</ul>
 			</div>
 			<!-- mobile menu bar -->
@@ -38,19 +37,19 @@
 					<img src="${pageContext.request.contextPath }/resources/images/commons/btn_menu_bar.png" />
 				</li>
 				<li>
-					<a href="${pageContext.request.contextPath }/intro/intro_1.do">바로나소개</a>
+					<a href="${pageContext.request.contextPath }/it/intro_1.do">바로나소개</a>
 				</li>
 				<li>
-					<a href="${pageContext.request.contextPath }/disease/disease_1.do">통증클리닉</a>
+					<a href="${pageContext.request.contextPath }/ds/disease_1.do">통증클리닉</a>
 				</li>
 				<li>
-					<a href="${pageContext.request.contextPath }/disease/disease_1.do">전문클리닉</a>
+					<a href="${pageContext.request.contextPath }/ex/expert_1.do">전문클리닉</a>
 				</li>
 				<li>
-					<a href="${pageContext.request.contextPath }/disease/disease_1.do">전문치료법</a>
+					<a href="${pageContext.request.contextPath }/tm/treatment_1.do">전문치료법</a>
 				</li>
 				<li>
-					<a href="${pageContext.request.contextPath }/disease/disease_1.do">상담&예약</a>
+					<a href="${pageContext.request.contextPath }/cs/notice_list.do">상담&예약</a>
 				</li>
 			</ul>
 		
@@ -60,112 +59,112 @@
 					<ul class="sub_list"></ul>
 					<ul class="sub_list sub-menu-01">
 						<li>
-							<a href="#">바로나 소개</a>
+							<a href="${pageContext.request.contextPath }/it/intro_1.do">바로나 소개</a>
 						</li>
 						<li>
-							<a href="#">진료시간</a>
+							<a href="${pageContext.request.contextPath }/it/intro_2.do">진료시간</a>
 						</li>
 						<li>
-							<a href="#">찾아오시는 길</a>
+							<a href="${pageContext.request.contextPath }/it/intro_3.do">찾아오시는 길</a>
 						</li>
 					</ul>
 					
 					<ul class="sub_list sub-menu-01">
 						<li>
-							<a href="#">병원 내부안내</a>
+							<a href="${pageContext.request.contextPath }/it/intro_4.do">병원 내부안내</a>
 						</li>
 						<li>
-							<a href="#">의료장비 소개</a>
-						</li>
-					</ul>
-					
-					<ul class="sub_list sub-menu-02">
-						<li>
-							<a href="#">두통</a>
-						</li>
-						<li>
-							<a href="#">목 통증</a>
-						</li>
-						<li>
-							<a href="#">등 통증</a>
+							<a href="${pageContext.request.contextPath }/it/intro_5.do">의료장비 소개</a>
 						</li>
 					</ul>
 					
 					<ul class="sub_list sub-menu-02">
 						<li>
-							<a href="#">어깨 통증</a>
+							<a href="${pageContext.request.contextPath }/ds/disease_1.do">두통</a>
 						</li>
 						<li>
-							<a href="#">팔꿈치 통증</a>
+							<a href="${pageContext.request.contextPath }/ds/disease_2.do">목 통증</a>
 						</li>
 						<li>
-							<a href="#">허리 통증</a>
-						</li>
-					</ul>
-					
-					<ul class="sub_list sub-menu-02">
-						<li>
-							<a href="#">무릎 통증</a>
-						</li>
-						<li>
-							<a href="#">엉덩이 통증</a>
-						</li>
-						<li>
-							<a href="#">사타구니 통증</a>
+							<a href="${pageContext.request.contextPath }/ds/disease_3.do">등 통증</a>
 						</li>
 					</ul>
 					
 					<ul class="sub_list sub-menu-02">
 						<li>
-							<a href="#">손목/손가락 통증</a>
+							<a href="${pageContext.request.contextPath }/ds/disease_4.do">어깨 통증</a>
 						</li>
 						<li>
-							<a href="#">발목/발가락 통증</a>
+							<a href="${pageContext.request.contextPath }/ds/disease_5.do">팔꿈치 통증</a>
+						</li>
+						<li>
+							<a href="${pageContext.request.contextPath }/ds/disease_6.do">허리 통증</a>
+						</li>
+					</ul>
+					
+					<ul class="sub_list sub-menu-02">
+						<li>
+							<a href="${pageContext.request.contextPath }/ds/disease_7.do">무릎 통증</a>
+						</li>
+						<li>
+							<a href="${pageContext.request.contextPath }/ds/disease_8.do">엉덩이 통증</a>
+						</li>
+						<li>
+							<a href="${pageContext.request.contextPath }/ds/disease_9.do">사타구니 통증</a>
+						</li>
+					</ul>
+					
+					<ul class="sub_list sub-menu-02">
+						<li>
+							<a href="${pageContext.request.contextPath }/ds/disease_10.do">손목/손가락 통증</a>
+						</li>
+						<li>
+							<a href="${pageContext.request.contextPath }/ds/disease_11.do">발목/발가락 통증</a>
 						</li>
 					</ul>
 					
 					<ul class="sub_list sub-menu-03">
 						<li>
-							<a href="#">팔꿈치 통증</a>
+							<a href="${pageContext.request.contextPath }/ex/expert_1.do">팔꿈치 통증</a>
 						</li>
 						<li>
-							<a href="#">어깨 통증</a>
+							<a href="${pageContext.request.contextPath }/ex/expert_2.do">어깨 통증</a>
 						</li>
 					</ul>
 					
 					<ul class="sub_list sub-menu-03">
 						<li>
-							<a href="#">목 통증</a>
+							<a href="${pageContext.request.contextPath }/ex/expert_3.do">목 통증</a>
 						</li>
 						<li>
-							<a href="#">대상포진</a>
-						</li>
-					</ul>
-					
-					<ul class="sub_list sub-menu-04">
-						<li>
-							<a href="#">프롤로 치료</a>
-						</li>
-						<li>
-							<a href="#">스톨스체외 충격파치료</a>
+							<a href="${pageContext.request.contextPath }/ex/expert_4.do">대상포진</a>
 						</li>
 					</ul>
 					
 					<ul class="sub_list sub-menu-04">
 						<li>
-							<a href="#">수면 신경치료</a>
+							<a href="${pageContext.request.contextPath }/tm/treatment_1.do">프롤로 치료</a>
 						</li>
 						<li>
-							<a href="#">무릎 유전자 치료</a>
+							<a href="${pageContext.request.contextPath }/tm/treatment_2.do">스톨스체외 충격파치료</a>
+						</li>
+					</ul>
+					
+					<ul class="sub_list sub-menu-04">
+						<li>
+							<a href="${pageContext.request.contextPath }/tm/treatment_3.do">수면 신경치료</a>
+						</li>
+						<li>
+							<a href="${pageContext.request.contextPath }/tm/treatment_4.do">무릎 유전자 치료</a>
 						</li>
 					</ul>
 					
 					<ul class="sub_list sub-menu-05">
 						<li>
-							<a href="#">공지사항</a>
+							<a href="${pageContext.request.contextPath }/cs/notice_list.do">공지사항</a>
 						</li>
 						<li>
-							<a href="#">자주하는 질문</a>
+							<a href="${pageContext.request.contextPath }/cs/faq_list.do">자주하는 질문</a>
 						</li>
 					</ul>
 				</div>
@@ -228,51 +227,51 @@
 			<ul class="menu_left">
 				<li class="menu1"><a href="#">병원소개</a>
 					<ul class="sub_menu">
-						<li><a href="${pageContext.request.contextPath }/m/intro/intro_1.do">바로나 소개</a></li>
-            <li><a href="${pageContext.request.contextPath }/m/intro/intro_2.do">진료시간</a></li>
-            <li><a href="${pageContext.request.contextPath }/m/intro/intro_3.do">찾아오시는 길</a></li>
-            <li><a href="${pageContext.request.contextPath }/m/intro/intro_4.do">병원 내부안내</a></li>
-            <li><a href="${pageContext.request.contextPath }/m/intro/intro_5.do">의료장비 소개</a></li>
+						<li><a href="${pageContext.request.contextPath }/it/intro_1.do">바로나 소개</a></li>
+            <li><a href="${pageContext.request.contextPath }/it/intro_2.do">진료시간</a></li>
+            <li><a href="${pageContext.request.contextPath }/it/intro_3.do">찾아오시는 길</a></li>
+            <li><a href="${pageContext.request.contextPath }/it/intro_4.do">병원 내부안내</a></li>
+            <li><a href="${pageContext.request.contextPath }/it/intro_5.do">의료장비 소개</a></li>
 					</ul>
 				</li>
 				<li class="menu2"><a href="#">통증클리닉</a>
 					<ul class="sub_menu">
-						<li><a href="${pageContext.request.contextPath }/m/disease/disease_1.do">두통</a></li>
-            <li><a href="${pageContext.request.contextPath }/m/disease/disease_2.do">목통증</a></li>
-            <li><a href="${pageContext.request.contextPath }/m/disease/disease_3.do">등통증</a></li>
-            <li><a href="${pageContext.request.contextPath }/m/disease/disease_4.do">어깨 통증</a></li>
-            <li><a href="${pageContext.request.contextPath }/m/disease/disease_5.do">팔꿈치 통증</a></li>
-            <li><a href="${pageContext.request.contextPath }/m/disease/disease_6.do">허리 통증</a></li>
-            <li><a href="${pageContext.request.contextPath }/m/disease/disease_7.do">무릎 통증</a></li>
-            <li><a href="${pageContext.request.contextPath }/m/disease/disease_8.do">엉덩이 통증</a></li>
-            <li><a href="${pageContext.request.contextPath }/m/disease/disease_9.do">사타구니 통증</a></li>
-            <li><a href="${pageContext.request.contextPath }/m/disease/disease_10.do">손목/손가락 통증</a></li>
-            <li><a href="${pageContext.request.contextPath }/m/disease/disease_11.do">발목/발가락 통증</a></li>
+						<li><a href="${pageContext.request.contextPath }/ds/disease_1.do">두통</a></li>
+            <li><a href="${pageContext.request.contextPath }/ds/disease_2.do">목통증</a></li>
+            <li><a href="${pageContext.request.contextPath }/ds/disease_3.do">등통증</a></li>
+            <li><a href="${pageContext.request.contextPath }/ds/disease_4.do">어깨 통증</a></li>
+            <li><a href="${pageContext.request.contextPath }/ds/disease_5.do">팔꿈치 통증</a></li>
+            <li><a href="${pageContext.request.contextPath }/ds/disease_6.do">허리 통증</a></li>
+            <li><a href="${pageContext.request.contextPath }/ds/disease_7.do">무릎 통증</a></li>
+            <li><a href="${pageContext.request.contextPath }/ds/disease_8.do">엉덩이 통증</a></li>
+            <li><a href="${pageContext.request.contextPath }/ds/disease_9.do">사타구니 통증</a></li>
+            <li><a href="${pageContext.request.contextPath }/ds/disease_10.do">손목/손가락 통증</a></li>
+            <li><a href="${pageContext.request.contextPath }/ds/disease_11.do">발목/발가락 통증</a></li>
 					</ul>
 				</li>
 				<li class="menu3"><a href="#">전문클리닉</a>
 					<ul class="sub_menu">
-						<li><a href="${pageContext.request.contextPath }/m/expert/expert_1.do">팔꿈치 통증</a></li>
-						<li><a href="${pageContext.request.contextPath }/m/expert/expert_2.do">어깨 통증</a></li>
-						<li><a href="${pageContext.request.contextPath }/m/expert/expert_3.do">목 통증</a></li>
-						<li><a href="${pageContext.request.contextPath }/m/expert/expert_4.do">대상포진</a></li>
+						<li><a href="${pageContext.request.contextPath }/ex/expert_1.do">팔꿈치 통증</a></li>
+						<li><a href="${pageContext.request.contextPath }/ex/expert_2.do">어깨 통증</a></li>
+						<li><a href="${pageContext.request.contextPath }/ex/expert_3.do">목 통증</a></li>
+						<li><a href="${pageContext.request.contextPath }/ex/expert_4.do">대상포진</a></li>
 					</ul>
 				</li>
 				<li class="menu4"><a href="#">치료법</a>
 					<ul class="sub_menu">
-						<li><a href="${pageContext.request.contextPath }/m/treatment/treatment_1.do">프롤로 치료</a></li>
-						<li><a href="${pageContext.request.contextPath }/m/treatment/treatment_2.do">스톨스체외 충격파치료</a></li>
-						<li><a href="${pageContext.request.contextPath }/m/treatment/treatment_3.do">수면 신경치료</a></li>
-						<li><a href="${pageContext.request.contextPath }/m/treatment/treatment_4.do">무릎 유전자 치료</a></li>
+						<li><a href="${pageContext.request.contextPath }/tm/treatment_1.do">프롤로 치료</a></li>
+						<li><a href="${pageContext.request.contextPath }/tm/treatment_2.do">스톨스체외 충격파치료</a></li>
+						<li><a href="${pageContext.request.contextPath }/tm/treatment_3.do">수면 신경치료</a></li>
+						<li><a href="${pageContext.request.contextPath }/tm/treatment_4.do">무릎 유전자 치료</a></li>
 					</ul>
 				</li>
 				<li class="menu5"><a href="#">상담 &amp; 예약</a>
 					<ul class="sub_menu">
-						<li><a href="${pageContext.request.contextPath }/m/counsel/notice_list.do">공지사항</a></li>
-						<li><a href="${pageContext.request.contextPath }/m/counsel/faq_list.do">자주하는질문</a></li>
+						<li><a href="${pageContext.request.contextPath }/cs/notice_list.do">공지사항</a></li>
+						<li><a href="${pageContext.request.contextPath }/cs/faq_list.do">자주하는질문</a></li>
 					</ul>
 				</li>
-				<li class="menu6"><a href="${pageContext.request.contextPath }/admin/login.do?mobile=y">관리자</a></li>
+				<li class="menu6"><a href="${pageContext.request.contextPath }/admin/login.do">관리자</a></li>
 			</ul>
 		</div>
 		

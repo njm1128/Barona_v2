@@ -9,7 +9,7 @@
 		<div class="image_wrap">
 			<img class="sub_image_100" src="${pageContext.request.contextPath }/resources/images/treatment/treatment_4-1.png" style="width: 85%;">
 			<span class="line_div"></span>
-			<img class="sub_image_100" src="${pageContext.request.contextPath }/resources/images/treatment/treatment_4-2.png" style="width: 85%;">
+			<img class="sub_image_100" src="${pageContext.request.contextPath }/resources/images/treatment/treatment_4-2.png" style="width: 60%;">
 		</div>
 	</div>
 </div>

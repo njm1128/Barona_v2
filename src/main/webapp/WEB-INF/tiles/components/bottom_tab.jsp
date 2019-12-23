@@ -4,28 +4,28 @@
 <div class="tab_wrap bottom_tab mt-5 pt-5">
 	<ul class="tab_list">
 		<li class="on">
-			<a href="#">목 통증</a>
+			<a class="cursor-default" href="#" onclick="return false">목 통증</a>
 		</li>
 		<li>
-			<a href="#">팔꿈치 통증</a>
+			<a class="cursor-default" href="#" onclick="return false">팔꿈치 통증</a>
 		</li>
 		<li>
-			<a href="#">허리 통증</a>
+			<a class="cursor-default" href="#" onclick="return false">허리 통증</a>
 		</li>
 		<li>
-			<a href="#">어깨 통증</a>
+			<a class="cursor-default" href="#" onclick="return false">어깨 통증</a>
 		</li>
 		<li>
-			<a href="#">무릎 통증</a>
+			<a class="cursor-default" href="#" onclick="return false">무릎 통증</a>
 		</li>
 		<li>
-			<a href="#">엉덩이 통증</a>
+			<a class="cursor-default" href="#" onclick="return false">엉덩이 통증</a>
 		</li>
 		<li>
-			<a href="#">손목/손가락 통증</a>
+			<a class="cursor-default" href="#" onclick="return false">손목/손가락 통증</a>
 		</li>
 		<li>
-			<a href="#">발목/발가락 통증</a>
+			<a class="cursor-default" href="#" onclick="return false">발목/발가락 통증</a>
 		</li>
 	</ul>
 	
@@ -42,21 +42,53 @@
 		
 		<div class="right_area">
 			<ul class="image_list">
-				<li><img src="${pageContext.request.contextPath}/resources/images/main/pain_01.png" /></li>
-				<li><img src="${pageContext.request.contextPath}/resources/images/main/pain_02.png" /></li>
-				<li><img src="${pageContext.request.contextPath}/resources/images/main/pain_03.png" /></li>
-				<li><img src="${pageContext.request.contextPath}/resources/images/main/pain_04.png" /></li>
-				<li><img src="${pageContext.request.contextPath}/resources/images/main/pain_05.png" /></li>
-				<li><img src="${pageContext.request.contextPath}/resources/images/main/pain_06.png" /></li>
-				<li><img src="${pageContext.request.contextPath}/resources/images/main/pain_07.png" /></li>
-				<li><img src="${pageContext.request.contextPath}/resources/images/main/pain_08.png" /></li>
+				<li>
+					<a href="${pageContext.request.contextPath }/ds/disease_2.do">
+						<img src="${pageContext.request.contextPath}/resources/images/main/pain_01.png" />
+					</a>
+				</li>
+				<li>
+					<a href="${pageContext.request.contextPath }/ds/disease_5.do">
+						<img src="${pageContext.request.contextPath}/resources/images/main/pain_02.png" />
+					</a>
+				</li>
+				<li>
+					<a href="${pageContext.request.contextPath }/ds/disease_6.do">
+						<img src="${pageContext.request.contextPath}/resources/images/main/pain_03.png" />
+					</a>
+				</li>
+				<li>
+					<a href="${pageContext.request.contextPath }/ds/disease_4.do">
+						<img src="${pageContext.request.contextPath}/resources/images/main/pain_04.png" />
+					</a>
+				</li>
+				<li>
+					<a href="${pageContext.request.contextPath }/ds/disease_7.do">
+						<img src="${pageContext.request.contextPath}/resources/images/main/pain_05.png" />
+					</a>
+				</li>
+				<li>
+					<a href="${pageContext.request.contextPath }/ds/disease_8.do">
+						<img src="${pageContext.request.contextPath}/resources/images/main/pain_06.png" />
+					</a>
+				</li>
+				<li>
+					<a href="${pageContext.request.contextPath }/ds/disease_10.do">
+						<img src="${pageContext.request.contextPath}/resources/images/main/pain_07.png" />
+					</a>
+				</li>
+				<li>
+					<a href="${pageContext.request.contextPath }/ds/disease_11.do">
+						<img src="${pageContext.request.contextPath}/resources/images/main/pain_08.png" />
+					</a>
+				</li>
 			</ul>
 		</div>
 	</div>
 	
 	<script>
 		$(document).ready(function() {
-  		change_bottom_image(0);
+			change_bottom_image(0);
   	});
   	
   	$('.bottom_tab .tab_list li').hover(function() {

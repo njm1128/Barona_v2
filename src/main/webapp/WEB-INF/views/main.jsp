@@ -52,14 +52,46 @@
 					</ul>
 					
 					<ul class="pain_image">
-						<li><img src="${pageContext.request.contextPath}/resources/images/main/pain_01.png" /></li>
-						<li><img src="${pageContext.request.contextPath}/resources/images/main/pain_02.png" /></li>
-						<li><img src="${pageContext.request.contextPath}/resources/images/main/pain_03.png" /></li>
-						<li><img src="${pageContext.request.contextPath}/resources/images/main/pain_04.png" /></li>
-						<li><img src="${pageContext.request.contextPath}/resources/images/main/pain_05.png" /></li>
-						<li><img src="${pageContext.request.contextPath}/resources/images/main/pain_06.png" /></li>
-						<li><img src="${pageContext.request.contextPath}/resources/images/main/pain_07.png" /></li>
-						<li><img src="${pageContext.request.contextPath}/resources/images/main/pain_08.png" /></li>
+						<li>
+							<a href="${pageContext.request.contextPath }/ds/disease_2.do">
+								<img src="${pageContext.request.contextPath}/resources/images/main/pain_01.png" />
+							</a>
+						</li>
+						<li>
+							<a href="${pageContext.request.contextPath }/ds/disease_5.do">
+								<img src="${pageContext.request.contextPath}/resources/images/main/pain_02.png" />
+							</a>
+						</li>
+						<li>
+							<a href="${pageContext.request.contextPath }/ds/disease_6.do">
+								<img src="${pageContext.request.contextPath}/resources/images/main/pain_03.png" />
+							</a>
+						</li>
+						<li>
+							<a href="${pageContext.request.contextPath }/ds/disease_4.do">
+								<img src="${pageContext.request.contextPath}/resources/images/main/pain_04.png" />
+							</a>
+						</li>
+						<li>
+							<a href="${pageContext.request.contextPath }/ds/disease_7.do">
+								<img src="${pageContext.request.contextPath}/resources/images/main/pain_05.png" />
+							</a>
+						</li>
+						<li>
+							<a href="${pageContext.request.contextPath }/ds/disease_8.do">
+								<img src="${pageContext.request.contextPath}/resources/images/main/pain_06.png" />
+							</a>
+						</li>
+						<li>
+							<a href="${pageContext.request.contextPath }/ds/disease_10.do">
+								<img src="${pageContext.request.contextPath}/resources/images/main/pain_07.png" />
+							</a>
+						</li>
+						<li>
+							<a href="${pageContext.request.contextPath }/ds/disease_11.do">
+								<img src="${pageContext.request.contextPath}/resources/images/main/pain_08.png" />
+							</a>
+						</li>
 					</ul>
 				</div>
 				
@@ -76,32 +108,32 @@
 		<div class="container">
 			<ul class="treat_list">
 				<li>
-					<a href="#">
+					<a href="${pageContext.request.contextPath }/tm/treatment_3.do">
 						<img class="scale" src="${pageContext.request.contextPath}/resources/images/main/banner_01.png" />
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="${pageContext.request.contextPath }/tm/treatment_1.do">
 						<img class="scale" src="${pageContext.request.contextPath}/resources/images/main/banner_02.png" />
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="${pageContext.request.contextPath }/tm/treatment_5.do">
 						<img class="scale" src="${pageContext.request.contextPath}/resources/images/main/banner_03.png" />
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="${pageContext.request.contextPath }/tm/treatment_2.do">
 						<img class="scale" src="${pageContext.request.contextPath}/resources/images/main/banner_04.png" />
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="${pageContext.request.contextPath }/tm/treatment_4.do">
 						<img class="scale" src="${pageContext.request.contextPath}/resources/images/main/banner_05.png" />
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="${pageContext.request.contextPath }/it/intro_1.do">
 						<img class="scale" src="${pageContext.request.contextPath}/resources/images/main/banner_06.png" />
 					</a>	
 				</li>
