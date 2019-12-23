@@ -9,7 +9,7 @@
 		<%@ include file="/WEB-INF/tiles/components/disease_tab.jsp" %>
 		
 		<div class="image_wrap">
-			<img class="sub_image_100" src="${pageContext.request.contextPath }/resources/images/expert/expert_2-1.png">
+			<img class="sub_image_100" src="${pageContext.request.contextPath }/resources/images/disease/disease_1-1.png">
 			
 			<h3 class="section_title">두통이란?</h3>
 			<p class="section_desc">두통은 머리 내부에서 일어나는 통증을 말합니다.<br/>뇌는 통각수용기가 없어, 뇌 자체는 통증을 느낄 수 없지만 오히려, 통증은 뇌 주변의 고통에 예민한 구조의 장애에 의해 일어납니다. 두통에는 여러 가지 다른 유형이 존재하는데, 두통의 치료는 근본적인 병인 또는 원인에 따라 다르나, 보통 진통제를 수반하지만 대부분의 두통은 휴식기를 가지면 자연적으로 치유가 됩니다.</p>

@@ -9,7 +9,7 @@
 		<%@ include file="/WEB-INF/tiles/components/disease_tab.jsp" %>
 		
 		<div class="image_wrap">
-			<img class="sub_image_100" src="${pageContext.request.contextPath }/resources/images/expert/expert_2-1.png">
+			<img class="sub_image_100" src="${pageContext.request.contextPath }/resources/images/disease/disease_11-1.png">
 			
 			<h3 class="section_title">발목 염좌란?</h3>
 			<p class="section_desc">발목염좌는 발목이 심하게 비틀리거나 접질렸을 때 발목 관절을 지탱하는 인대들의 손상으로 발생하는 질환 중 하나로 발목염좌라고도 합니다. 일상생활에서 "발목이 삐었다" 또는 "발목을 접질렸다"라고 인식되는 질환들은 발목염좌를 의미하는 경우가 많습니다.</p>

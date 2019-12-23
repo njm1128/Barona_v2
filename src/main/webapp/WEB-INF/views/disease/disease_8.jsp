@@ -9,7 +9,7 @@
 		<%@ include file="/WEB-INF/tiles/components/disease_tab.jsp" %>
 		
 		<div class="image_wrap">
-			<img class="sub_image_100" src="${pageContext.request.contextPath }/resources/images/expert/expert_2-1.png">
+			<img class="sub_image_100" src="${pageContext.request.contextPath }/resources/images/disease/disease_8-1.png">
 			
 			<h3 class="section_title">천장관절 증후군이란?</h3>
 			<p class="section_desc">천장관절 증후군이란 천장관절 주변 인대의 손상으로 관절의 불안정성이 야기되어 허리와 엉덩이 주변으로 통증 및 연관통이 나타나는 질환입니다. 천장관절이란 골반에서 엉치뼈(천골)와 엉덩이뼈(장골)가 만나는 부위로, 이 관절을 지지해주는 인대가 약화되거나 손상되면 천장관절 증후군이 나타나게 됩니다.</p>

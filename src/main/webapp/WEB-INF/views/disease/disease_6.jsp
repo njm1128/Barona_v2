@@ -9,7 +9,7 @@
 		<%@ include file="/WEB-INF/tiles/components/disease_tab.jsp" %>
 		
 		<div class="image_wrap">
-			<img class="sub_image_100" src="${pageContext.request.contextPath }/resources/images/expert/expert_2-1.png">
+			<img class="sub_image_100" src="${pageContext.request.contextPath }/resources/images/disease/disease_6-1.png">
 			
 			<h3 class="section_title">허리 디스크란?</h3>
 			<p class="section_desc">척추 뼈 사이에는 뼈 끼리 충격을 막아주는 물령뼈 조직의 구조물이 있습니다. 이러한 구조물들을 '디스크'라고 부르는데, 압력이 가해지면 디스크는 다른 한쪽으로 밀려나게 되고 이렇게 밀려나온 디스크는 신경근을 누름으로써 허리와 하반신의 통증을 동반한게 됩니다.</p>

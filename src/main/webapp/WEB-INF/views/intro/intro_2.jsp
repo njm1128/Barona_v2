@@ -10,5 +10,7 @@
 		<div class="image_wrap">
 			<img class="sub_image_100" src="${pageContext.request.contextPath }/resources/images/intro/intro_2-1.png" style="width: 70%">
 		</div>
+		
+		<%@ include file="/WEB-INF/tiles/components/bottom_tab.jsp" %>
 	</div>
 </div>

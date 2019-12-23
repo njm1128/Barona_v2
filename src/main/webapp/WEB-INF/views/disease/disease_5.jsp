@@ -9,7 +9,7 @@
 		<%@ include file="/WEB-INF/tiles/components/disease_tab.jsp" %>
 		
 		<div class="image_wrap">
-			<img class="sub_image_100" src="${pageContext.request.contextPath }/resources/images/expert/expert_2-1.png">
+			<img class="sub_image_100" src="${pageContext.request.contextPath }/resources/images/disease/disease_5-1.png">
 			
 			<h3 class="section_title">테니스 엘보란?</h3>
 			<p class="section_desc">테니스를 즐기는 사람들에게 자주 발생한다고 하여 붙여진 이름으로 외상과염이라 하며 팔꿈치 관절 바깥쪽에 발생하는 통증의 가장 흔한 원인입니다. 팔 관절에 반복적인 충격이 가해지면 손상된 부위에 힘줄에 염증과 함께 미세 파열이 일어나 통증이 발생하게 됩니다.</p>

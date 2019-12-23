@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
-<div id="content">
-	<div class="sub_page">
-		<h1><img src="${pageContext.request.contextPath }/resources/images/commons/tit_sub.jpg"/></h1>
-		<h2><img src="${pageContext.request.contextPath }/resources/images/counsel/tit_faq.jpg"/></h2>
+<div class="sub_wrap">
+	<div class="container">
+		<h2 class="sub_title">자주하는 질문</h2>
+		<p class="sub_title_desc">바로나 마취통증의학과는 몸의 통증 뿐만 아니라 마음의 통증도 치료합니다.</p>
 		
 		<div class="top-srh">
 			<div class="search">
@@ -21,11 +20,6 @@
 			</div>
 		</div>
 		<table class="tbl-faq">
-			<colgroup>
-				<col width="13%" />
-				<col width="17%" />
-				<col width="*" />
-			</colgroup>
 			<tbody>
 				<c:choose>
 					<c:when test="${empty faqList }">
@@ -35,12 +29,12 @@
 					</c:when>
 					<c:otherwise>
 						<c:forEach var="faq" items="${faqList}" varStatus="status">
-							<tr>
+							<tr class="cursor" onclick="javascript:show_answer('${status.count}')">
 								<td class="info que"><span>질문</span></td>
 								<td class="type">${faq.faqType}</td>
-								<td class="question"><a href="javascript:show_answer('${status.count}')">${faq.faqQuestion}</a></td>
+								<td class="question">${faq.faqQuestion}</td>
 							</tr>
-							<tr id="answer${status.count}" style="display: none;">
+							<tr id="answer${status.count}" class="hide">
 								<td class="info ans"><span>답변</span></td>
 								<td class="answer" colspan="2">${faq.faqAnswer }</td>
 							</tr>
@@ -112,7 +106,11 @@
 			  </ul>
 			</div>
 		</c:if>
-		<script>
+		
+		<%@ include file="/WEB-INF/tiles/components/bottom_tab.jsp" %>
+	</div>
+	
+	<script>
 			$('.btn_search').on( "click", function(event) {
 				event.preventDefault();
 				self.location = "faq_list.do"
@@ -132,5 +130,4 @@
 				}
 			}
 		</script>
-	</div>
 </div>

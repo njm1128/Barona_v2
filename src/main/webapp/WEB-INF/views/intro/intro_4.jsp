@@ -17,6 +17,8 @@
 		  	</c:forEach>
 			</div>
 		</div>
+		
+		<%@ include file="/WEB-INF/tiles/components/bottom_tab.jsp" %>
 	</div>
 	
 	<script>

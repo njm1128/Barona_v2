@@ -11,5 +11,7 @@
 			<img src="${pageContext.request.contextPath }/resources/images/intro/intro_1-1.png">
 			<img src="${pageContext.request.contextPath }/resources/images/intro/intro_1-2.png" style="width: 75%;">
 		</div>
+		
+		<%@ include file="/WEB-INF/tiles/components/bottom_tab.jsp" %>
 	</div>
 </div>

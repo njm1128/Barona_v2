@@ -9,7 +9,7 @@
 		<%@ include file="/WEB-INF/tiles/components/disease_tab.jsp" %>
 		
 		<div class="image_wrap">
-			<img class="sub_image_100" src="${pageContext.request.contextPath }/resources/images/expert/expert_2-1.png">
+			<img class="sub_image_100" src="${pageContext.request.contextPath }/resources/images/disease/disease_3-1.png">
 			
 			<h3 class="section_title">흉추 디스크 탈출이란?</h3>
 			<p class="section_desc">흉추 부위에 위치한 척추 디스크가 원래 위치에서 이탈하여 후방에 위치한 척추 신경을 압박하여 나타나는 질환입니다. 흉추 디스크의 경우, 흉추가 허리나 목처럼 많이 움직이는 부위가 아니고, 갈비뼈와 관절을 이루고 있어서 외상에 대한 저항력이 강하고 섬유륜이 두꺼워서 발생빈도가 목이나 허리디스크 질환에 비해 현저히 낮습니다. 하지만, 지속적으로 나쁜 자세를 취하거나 외상에 의해 디스크에 큰 충격이 발생하면 흉추 디스크 질환이 발생할 수 있습니다.</p>

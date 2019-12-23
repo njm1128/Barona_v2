@@ -16,7 +16,7 @@ import com.innovation.barona.vo.PageMaker;
 import com.innovation.barona.vo.SearchCriteria;
 
 @Controller
-@RequestMapping("/counsel")
+@RequestMapping("/cs")
 public class NoticeController {
 
 	@Autowired

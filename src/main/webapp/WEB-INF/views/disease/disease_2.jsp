@@ -9,7 +9,7 @@
 		<%@ include file="/WEB-INF/tiles/components/disease_tab.jsp" %>
 		
 		<div class="image_wrap">
-			<img class="sub_image_100" src="${pageContext.request.contextPath }/resources/images/expert/expert_2-1.png">
+			<img class="sub_image_100" src="${pageContext.request.contextPath }/resources/images/disease/disease_2-1.png">
 			
 			<h3 class="section_title">목디스크란?</h3>
 			<p class="section_desc">목디스크는 목뼈 사이에서 몸의 충격을 흡수시켜 주는 완충역할을 합니다. 나이가 들어감에 따라 디스크 내의 수분함량 감소에 의한 탄력성의 감소나, 나쁜 자세나 사고 등에 의해 디스크가 튀어나와 어깨나 팔로 가는 신경을 누름으로써 통증을 유발하는 것을 지칭합니다.</p>

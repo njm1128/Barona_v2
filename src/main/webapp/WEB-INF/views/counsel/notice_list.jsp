@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
-<div id="content">
-	<div class="sub_page">
-		<h1><img src="${pageContext.request.contextPath }/resources/images/commons/tit_sub.jpg"/></h1>
-		<h2><img src="${pageContext.request.contextPath }/resources/images/counsel/tit_notice.jpg"/></h2>
+<div class="sub_wrap">
+	<div class="container">
+		<h2 class="sub_title">공지사항</h2>
+		<p class="sub_title_desc">바로나 마취통증의학과는 몸의 통증 뿐만 아니라 마음의 통증도 치료합니다.</p>
 		
 		<div class="top-srh">
 			<p class="total">총<span>${totalCount }</span>건</p>
@@ -24,13 +23,13 @@
 		<table class="tbl-list">
 			<thead>
 				<tr>
-					<th style="width: 2%;">&nbsp;</th>
-					<th style="width: 5%;">번호</th>
+					<th>&nbsp;</th>
+					<th>번호</th>
 					<th>제목</th>
-					<th style="width: 10%;">글쓴이</th>
-					<th style="width: 17%;">등록일</th>
-					<th style="width: 5%;">조회</th>
-					<th style="width: 2%;">&nbsp;</th>
+					<th>글쓴이</th>
+					<th>등록일</th>
+					<th>조회</th>
+					<th>&nbsp;</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -46,7 +45,7 @@
 								<td>&nbsp;</td>
 								<td>${notice.noticeNo }</td>
 								<td class="left"><a href="notice_view.do${pageMaker.makeSearch(cri.page)}&no=${notice.noticeNo }">${notice.noticeTitle }</a></td>
-								<td>바로나<br/>관리자</td>
+								<td>관리자</td>
 								<fmt:parseDate var="noticeRegdate" value="${notice.noticeRegdate }" pattern="yyyy-MM-dd kk:mm" />
 								<td><fmt:formatDate value="${noticeRegdate }" pattern="yyyy-MM-dd kk:mm" /></td>
 								<td>${notice.noticeHit }</td>

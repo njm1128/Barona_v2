@@ -1,19 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
-<div id="content">
-	<div class="sub_page">
-		<h1><img src="${pageContext.request.contextPath }/resources/images/commons/tit_sub.jpg"/></h1>
-		<h2><img src="${pageContext.request.contextPath }/resources/images/counsel/tit_notice.jpg"/></h2>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
+<div class="sub_wrap">
+	<div class="container">
+		<h2 class="sub_title">공지사항</h2>
+		<p class="sub_title_desc">바로나 마취통증의학과는 몸의 통증 뿐만 아니라 마음의 통증도 치료합니다.</p>
 		
 		<table class="tbl-view">
 			<tr>
-				<th width="10%">제목</th>
-				<td width="60%">${notice.noticeTitle }</td>
-				<th width="10%">등록일</th>
+				<th class="col-1">제목</th>
+				<td class="col-2">${notice.noticeTitle }</td>
+				<th class="col-3">등록일</th>
 				<fmt:parseDate var="noticeRegdate" value="${notice.noticeRegdate }" pattern="yyyy-MM-dd kk:mm" />
-				<td width="20%"><fmt:formatDate value="${noticeRegdate }" pattern="yyyy-MM-dd kk:mm" /></td>
+				<td class="col-4"><fmt:formatDate value="${noticeRegdate }" pattern="yyyy-MM-dd kk:mm" /></td>
 			</tr>
 			<tr>
 				<th>글쓴이</th>

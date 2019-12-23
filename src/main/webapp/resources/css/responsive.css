@@ -177,6 +177,59 @@
 		width: 100% !important; 
 	}
 	
+	.tbl-list th {
+    line-height: 39px;
+    font-size: 15px; 
+	}
+	.tbl-list th:nth-child(2) {
+		width: 30px;
+	}
+	.tbl-list th:nth-child(3) {
+		width: calc(100% - 265px);
+	}
+	.tbl-list th:nth-child(4) {
+		width: 50px;
+	}
+	.tbl-list th:nth-child(5) {
+		width: 135px;
+	}
+	.tbl-list th:nth-child(6) {
+		width: 50px;
+	}
+	.tbl-view th, .tbl-view td {
+		font-size: 15px;
+	}
+	.tbl-view .col-1 {
+		width: 75px;
+	}
+	.tbl-view .col-2 {
+	  width: calc(100% - 300px);
+	}
+	.tbl-view .col-3 {
+		width: 75px;
+	}
+	.tbl-view .col-4 {
+		width: 150px;
+	}
+	.tbl-list td {
+		font-size: 14px;
+	}
+	
+	.tbl-faq td.info {
+		width: 100px;
+	}
+	
+	.tbl-faq td.type {
+		width: 100px;
+	}
+	
+	.tbl-faq td.question {
+		width: calc(100% - 200px);
+	}
+	
+	.tbl-faq td.answer {
+		width: calc(100% - 100px)
+	}
 }
 
 /* Extra Small devices */
@@ -206,6 +259,85 @@
 	
 	.tab_wrap .tab_list li {
 		width: 50%;
+	}
+	
+	.top-srh .search input {
+		width: 140px;
+	}
+	
+	.tbl-list th {
+		font-size: 13px;
+	}
+	.tbl-list th:nth-child(1) {
+		width: 0;
+		font-size: 0;
+	}
+	.tbl-list th:nth-child(2) {
+		width: 34px;
+	}
+	.tbl-list th:nth-child(3) {
+		width: calc(100% - 189px);
+	}
+	.tbl-list th:nth-child(4) {
+		width: 45px;
+	}
+	.tbl-list th:nth-child(5) {
+		width: 72px;
+	}
+	.tbl-list th:nth-child(6) {
+		width: 38px;
+	}
+	.tbl-list th:nth-child(7) {
+		width: 0;
+		font-size: 0;
+	}
+	.tbl-list td {
+		font-size: 12px;
+	}
+	.tbl-list td:first-child, .tbl-list td:last-child {
+		padding: 0;
+		font-size: 0;
+	}
+	.tbl-view th, .tbl-view td {
+		padding-left: 8px;
+		padding-right: 8px;
+		font-size: 13px;
+	}
+	.tbl-view .col-1 {
+		width: 53px;
+	}
+	.tbl-view .col-2 {
+	  width: calc(100% - 190px);
+	}
+	.tbl-view .col-3 {
+		width: 53px;
+	}
+	.tbl-view .col-4 {
+		width: 84px;
+	}
+	.tbl-faq td.info {
+		width: 60px;
+	}
+	
+	.tbl-faq td.info span {
+		padding-left: 0;
+		padding-right: 0;
+		width: 50px;
+	}
+	
+	.tbl-faq td.type {
+		width: 90px;
+		font-size: 14px;
+	}
+	
+	.tbl-faq td.question {
+		width: calc(100% - 150px);
+		font-size: 14px;
+	}
+	
+	.tbl-faq td.answer {
+		width: calc(100% - 60px);
+		font-size: 14px;
 	}
 	
 }

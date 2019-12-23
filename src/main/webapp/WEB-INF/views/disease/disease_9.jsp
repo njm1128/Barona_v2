@@ -9,7 +9,7 @@
 		<%@ include file="/WEB-INF/tiles/components/disease_tab.jsp" %>
 		
 		<div class="image_wrap">
-			<img class="sub_image_100" src="${pageContext.request.contextPath }/resources/images/expert/expert_2-1.png">
+			<img class="sub_image_100" src="${pageContext.request.contextPath }/resources/images/disease/disease_9-1.png">
 			
 			<h3 class="section_title">비구 대퇴 충돌 증후군이란?</h3>
 			<p class="section_desc">고관절은 대퇴골 근위부 비구로 이루어져 있는데, 대퇴비구 충돌증후군은 관절의 과도한 움직이에 의해 대퇴골과 비구가 반복적으로 충돌하는 것이며 고관절 관절염의 중요한 일차적 원인으로, 과도한 관절의 움직임을 일으키는 운동선수들 에게서 주로 발생합니다.</p>

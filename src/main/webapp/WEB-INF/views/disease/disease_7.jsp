@@ -9,7 +9,7 @@
 		<%@ include file="/WEB-INF/tiles/components/disease_tab.jsp" %>
 		
 		<div class="image_wrap">
-			<img class="sub_image_100" src="${pageContext.request.contextPath }/resources/images/expert/expert_2-1.png">
+			<img class="sub_image_100" src="${pageContext.request.contextPath }/resources/images/disease/disease_7-1.png">
 			
 			<h3 class="section_title">무릎 인대 손상</h3>
 			<p class="section_desc">무릎 인대는 무릎에 안정성을 부여하는 중요한 역할을 합니다. 무릎에서 중요한 인대는 전방십자인대, 후방십자인대, 내측측부인대 및 외측측부인대 등이 있습니다.</p>

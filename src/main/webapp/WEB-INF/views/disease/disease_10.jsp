@@ -9,7 +9,7 @@
 		<%@ include file="/WEB-INF/tiles/components/disease_tab.jsp" %>
 		
 		<div class="image_wrap">
-			<img class="sub_image_100" src="${pageContext.request.contextPath }/resources/images/expert/expert_2-1.png">
+			<img class="sub_image_100" src="${pageContext.request.contextPath }/resources/images/disease/disease_10-1.png">
 			
 			<h3 class="section_title">삼각섬유 연골복합체(TFCC) 파열이란?</h3>
 			<p class="section_desc">손목은 요골과 척골, 8개의 손목뼈로 이루어져 있습니다. 이 사이에 삼각섬유 연골복합체(TFCC)라고 하는 연골이 존재하여 손목의 자유로운 움직임을 도와주고 뼈에 전해지는 충격을 완화하는 역할을 하고 있습니다. 손목을 돌리거나 뒤로 젖힐 때 손목 관절의 완충 작용을 하여 손목의 안정성을 유지할 수 있게 합니다. 이러한 삼각섬유 연골복합체(TFCC)가 어떤 원인에서건 파열되면 새끼 손가락쪽 부위로 통증을 유발하고 손목의 움직임에 제한이 생기게 되는데, 이를 삼각섬유 연골복합체(TFCC)파열이라고 합니다.</p>
