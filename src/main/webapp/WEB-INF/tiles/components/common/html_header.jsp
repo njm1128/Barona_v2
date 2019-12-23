@@ -31,6 +31,7 @@
 <link href="${pageContext.request.contextPath }/resources/css/style.css?ver=${ver}" rel="stylesheet">
 <link href="${pageContext.request.contextPath }/resources/css/responsive.css?ver=${ver}" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="${pageContext.request.contextPath }/resources/js/cookie.js"></script>
 <script src="${pageContext.request.contextPath }/resources/plugin/flexslider/jquery.flexslider-min.js"></script>
 <script src="${pageContext.request.contextPath }/resources/plugin/magnific-popup/magnific-popup.min.js"></script>
 </head>
