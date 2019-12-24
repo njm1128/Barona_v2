@@ -148,14 +148,17 @@
 						<li>
 							<a href="${pageContext.request.contextPath }/tm/treatment_2.do">스톨스체외 충격파치료</a>
 						</li>
+						<li>
+							<a href="${pageContext.request.contextPath }/tm/treatment_3.do">수면 신경치료</a>
+						</li>
 					</ul>
 					
 					<ul class="sub_list sub-menu-04">
 						<li>
-							<a href="${pageContext.request.contextPath }/tm/treatment_3.do">수면 신경치료</a>
+							<a href="${pageContext.request.contextPath }/tm/treatment_4.do">무릎 유전자 치료</a>
 						</li>
 						<li>
-							<a href="${pageContext.request.contextPath }/tm/treatment_4.do">무릎 유전자 치료</a>
+							<a href="${pageContext.request.contextPath }/tm/treatment_5.do">도수 치료</a>
 						</li>
 					</ul>
 					
@@ -263,6 +266,7 @@
 						<li><a href="${pageContext.request.contextPath }/tm/treatment_2.do">스톨스체외 충격파치료</a></li>
 						<li><a href="${pageContext.request.contextPath }/tm/treatment_3.do">수면 신경치료</a></li>
 						<li><a href="${pageContext.request.contextPath }/tm/treatment_4.do">무릎 유전자 치료</a></li>
+						<li><a href="${pageContext.request.contextPath }/tm/treatment_5.do">도수 치료</a></li>
 					</ul>
 				</li>
 				<li class="menu5"><a href="#">상담 &amp; 예약</a>

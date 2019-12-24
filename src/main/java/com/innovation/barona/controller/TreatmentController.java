@@ -31,4 +31,10 @@ public class TreatmentController {
 		return "treatment/treatment_4";
 	}
 	
+	@RequestMapping("treatment_5.do")
+	public String goTreatment_5(){
+		
+		return "treatment/treatment_5";
+	}
+	
 }

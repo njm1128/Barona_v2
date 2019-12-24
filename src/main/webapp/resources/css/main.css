@@ -186,6 +186,8 @@ body {
   position: absolute;
   right: 35px;
   top: 15px;
+  z-index: -1;
+  opacity: 0.9;
 }
 
 #header .gnb_sub .sub_image img {
