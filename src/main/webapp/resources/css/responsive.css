@@ -86,7 +86,29 @@
 
 /* Medium devices */
 @media (max-width: 993px) {
+	#visual .visual_text_01 {
+		font-size: 1.25rem;
+	}
 	
+	#visual .visual_text_02 {
+		font-size: 1.5rem;
+	}
+	
+	#visual .visual_text_03 {
+		font-size: 1rem;
+	}
+	
+	.sub_wrap .banner_sub .banner_text_01 {
+		font-size: 1.45rem;
+	}
+	
+	.sub_wrap .banner_sub .banner_text_02 {
+		font-size: 1.8rem;
+	}
+	
+	.sub_wrap .banner_sub .banner_text_03 {
+		font-size: 0.98rem;
+	}
 }
 
 /* Small devices */
@@ -124,12 +146,17 @@
 		display: block;
 	}
 	
-	#footer .ft_info {
-		font-size: 12px;
+	#visual .visual_image {
+		padding: 0 20px;
+		height: 450px;
 	}
 	
-	#visual .visual_image {
-		height: 450px;
+	#visual .flex-direction-nav {
+		display: none;
+	}
+	
+	#footer .ft_info {
+		font-size: 12px;
 	}
 	
 	.main_wrap .main_title img {
@@ -243,7 +270,7 @@
 	}	
 	
 	#header .top .logo img {
-		width: 82%;
+		width: 76%;
 	}
 	
 	#footer .ft_info {
