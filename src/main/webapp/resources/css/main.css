@@ -289,6 +289,7 @@ body {
 }
 
 #visual .visual_image {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -303,7 +304,7 @@ body {
 }
 
 #visual .visual_01 {
-	background-image: url('../images/commons/visual_01.png');
+	background-image: url('../images/commons/visual_04.png');
 }
 
 #visual .visual_02 {
@@ -315,18 +316,22 @@ body {
 }
 
 #visual .visual_text_01 {
-  font-size: 1.5rem;
-	font-weight: bold;
-  color: #98dbe2;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #6febfb;
   line-height: 135%;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 
 #visual .visual_text_02 {
   margin: 25px 0;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: bold;
 	color: #fff;
 	line-height: 135%;
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
+	z-index: 1;
 }
 
 #visual .visual_text_03 {
@@ -334,6 +339,22 @@ body {
   font-weight: bold;
   color: #fff;
   line-height: 135%;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+#visual .visual_layer_01 {
+  position: absolute;
+  left: 50%;
+  margin-left: -435px;
+  width: 400px;
+  height: 340px;
+	background-image: url(../images/commons/visual_layer_01.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  opacity: 0.8;
+  z-index: 0;
 }
 
 #visual .flex-direction-nav a:before {

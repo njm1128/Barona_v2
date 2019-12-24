@@ -14,7 +14,8 @@
 	$(document).ready(function() {
 		$('.flexslider').flexslider({
 	    animation: "slide",
-	    controlNav: false
+	    controlNav: false,
+	    slideshowSpeed: 8000
 	  });
 	});
 	

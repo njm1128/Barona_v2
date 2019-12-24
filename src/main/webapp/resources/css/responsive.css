@@ -98,6 +98,11 @@
 		font-size: 1rem;
 	}
 	
+	#visual .visual_layer_01 {
+		margin-left: -355px;
+    height: 270px;
+	}
+	
 	.sub_wrap .banner_sub .banner_text_01 {
 		font-size: 1.45rem;
 	}
@@ -149,6 +154,11 @@
 	#visual .visual_image {
 		padding: 0 20px;
 		height: 450px;
+	}
+	
+	#visual .visual_layer_01 {
+		margin-left: -200px;
+    height: 260px;
 	}
 	
 	#visual .flex-direction-nav {
