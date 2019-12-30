@@ -25,6 +25,10 @@
 		<put-attribute name="content" value="/WEB-INF/views/main.jsp" />
 	</definition>
 	
+	<definition name="popup/*" extends="empty_layout">
+		<put-attribute name="content" value="/WEB-INF/views/popup/{1}.jsp" />
+	</definition>
+	
 	<definition name="*/*" extends="sub_layout">
 		<put-attribute name="content" value="/WEB-INF/views/{1}/{2}.jsp" />
 	</definition>

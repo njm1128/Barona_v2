@@ -44,4 +44,9 @@ public class PopUpController {
 		
 		return "popup/popup_07";
 	}
+	@RequestMapping("/popup_08.do")
+	public String goPopup08(){
+		
+		return "popup/popup_08";
+	}
 }

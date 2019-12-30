@@ -3,7 +3,7 @@
 
 <script>
 	/* 팝업 보이기 */
-	function openPopup() {
+	function openPopupPc() {
 		var cookieCheck01 = getCookie('popup01YN');
 		var cookieCheck02 = getCookie('popup02YN');
 		var cookieCheck03 = getCookie('popup03YN');
@@ -11,11 +11,12 @@
 		var cookieCheck05 = getCookie('popup05YN');
 		var cookieCheck06 = getCookie('popup06YN');
 		var cookieCheck07 = getCookie('popup07YN');
+		var cookieCheck08 = getCookie('popup08YN');
 		
 		if(cookieCheck02 != 'N')
-			 window.open("${pageContext.request.contextPath}/popup/popup_02.do", "b", "width=439, height=542, left=360, top=242, scrollbars=no, resizable=no, toolbars=no, menubar=no");
+			 window.open("${pageContext.request.contextPath}/popup/popup_02.do", "b", "width=439, height=542, left=360, top=200, scrollbars=no, resizable=no, toolbars=no, menubar=no");
 		if(cookieCheck01 != 'N')
-			 window.open("${pageContext.request.contextPath}/popup/popup_01.do", "a", "width=439, height=542, left=300, top=172, scrollbars=no, resizable=no, toolbars=no, menubar=no");
+			 window.open("${pageContext.request.contextPath}/popup/popup_01.do", "a", "width=439, height=542, left=300, top=130, scrollbars=no, resizable=no, toolbars=no, menubar=no");
 		//if(cookieCheck03 != 'N')
 		//	 window.open("${pageContext.request.contextPath}/popup/popup_03.do", "c", "width=439, height=542, left=225, top=232, scrollbars=no, resizable=no, toolbars=no, menubar=no");
 		//if(cookieCheck04 != 'N')
@@ -24,12 +25,30 @@
 		//	 window.open("${pageContext.request.contextPath}/popup/popup_05.do", "c", "width=439, height=542, left=225, top=232, scrollbars=no, resizable=no, toolbars=no, menubar=no");
 		//if(cookieCheck06 != 'N')
 		//	 window.open("${pageContext.request.contextPath}/popup/popup_06.do", "c", "width=439, height=542, left=300, top=192, scrollbars=no, resizable=no, toolbars=no, menubar=no");
-		if(cookieCheck07 != 'N')
-			 window.open("${pageContext.request.contextPath}/popup/popup_07.do", "c", "width=420, height=518, left=240, top=22, scrollbars=no, resizable=no, toolbars=no, menubar=no");
+		//if(cookieCheck07 != 'N')
+		//	 window.open("${pageContext.request.contextPath}/popup/popup_07.do", "c", "width=420, height=518, left=240, top=22, scrollbars=no, resizable=no, toolbars=no, menubar=no");
+		if(cookieCheck08 != 'N')
+			 window.open("${pageContext.request.contextPath}/popup/popup_08.do", "c", "width=560, height=320, left=270, top=130, scrollbars=no, resizable=no, toolbars=no, menubar=no");
 	}
 	
 	$(window).on('load', function() {
-	  openPopup();
+	  var windowWidth = $( window ).width();
+
+		if(windowWidth <= 320) {
+			$('#popup_layer').css('margin-left', '-145px');
+		} else if (windowWidth <= 375) {
+			$('#popup_layer').css('margin-left', '-170px');
+		} else if (windowWidth <= 426) {
+			$('#popup_layer').css('margin-left', '-194px');
+		} else if (windowWidth <= 768) {
+			$('#popup_layer').css('margin-left', '-345px');
+		} else if (windowWidth <= 992){
+			$('#popup_layer').css('margin-left', '-465px');
+		} else {
+			openPopupPc();
+			$('#popup_layer').hide();
+			$('#overlay_t').hide();
+		}
 	});
 </script>
 <div class="main_wrap">
@@ -196,6 +215,21 @@
 		</div>
 	</div>
   
+  <div id="overlay_t"></div> 
+	<div id="popup_layer">
+		<img src="${pageContext.request.contextPath }/resources/images/popups/popup_08.png" style="width: 100%; display: block;" class="popup_image popup01">
+		<img src="${pageContext.request.contextPath }/resources/images/popups/m_popup_01.jpg" style="width: 100%;" class="popup_image popup02">
+		<div class="btn_slides">
+			<a href="#" class="btnPrev"><i class="fas fa-chevron-circle-left"></i></a>
+			<p class="popup_number"></p>
+			<a href="#" class="btnNext"><i class="fas fa-chevron-circle-right"></i></a>
+		</div>
+		<div class="btn_group">
+			<a href="#" class="btnDay">오늘 하루 열지 않기</a>
+			<a href="#" class="btnClose">닫기</a>
+		</div>
+	</div>
+
   <script>
   	$(document).ready(function() {
   		change_pain_image(0);
@@ -215,13 +249,57 @@
   	}
   	
   	$('.right_area .right_01 .park_image').magnificPopup({
-        type: 'image',
-        closeBtnInside: true,
-        fixedContentPos: true,
-        image: {verticalFit: true},
-        gallery: {enabled: true},
-        zoom: {enabled: true, duration: 400}
-     });
+       type: 'image',
+       closeBtnInside: true,
+       fixedContentPos: true,
+       image: {verticalFit: true},
+       gallery: {enabled: true},
+       zoom: {enabled: true, duration: 400}
+    });
   	
+  	var cookieCheck01 = getCookie('mpopup01YN');
+		var popups = $('.popup_image');
+		var current_popup = 1;
+		
+		$('.btn_slides .popup_number').text(popup_numbering(current_popup, popups.length));
+		
+		if(cookieCheck01 != 'N' && $(window).width() <= 992) {
+			$('#popup_layer, #overlay_t').show(); 
+		}
+	
+		$('#popup_layer').css("top", Math.max(0, $(window).scrollTop() + 140) + "px"); 
+		
+		$('.btnPrev').click(function(){
+			if(current_popup == 1) 
+				return;
+			current_popup -= 1;
+			$('.btn_slides .popup_number').text(popup_numbering(current_popup, popups.length));
+			$('.popup_image').hide();
+			$('.popup0' + current_popup).show();
+		});
+		$('.btnNext').click(function(){
+			if(current_popup == popups.length) 
+				return;
+			current_popup += 1;
+			$('.btn_slides .popup_number').text(popup_numbering(current_popup, popups.length));
+			$('.popup_image').hide();
+			$('.popup0' + current_popup).show();
+		});
+		
+		$('.btnDay').click(function() {
+			setCookie( "mpopup01YN", "N" , 1);
+			$('#overlay_t, #popup_layer').hide();
+		});
+		$('.btnClose').click(function() {
+			$('#overlay_t, #popup_layer').hide();
+		});
+		
+		function popup_numbering(current, length) {
+			if(current < 10)
+				current = '0' + current;
+			if(length < 10) 
+				length = '0' + length;
+			return current + ' / ' + length;
+		}
   </script>
 </div>

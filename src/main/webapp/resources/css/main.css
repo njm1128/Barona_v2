@@ -12,7 +12,7 @@ html {
 body {
 	position: relative;
   overflow-x: hidden;
-	overflow-y: scroll;
+	overflow-y: auto;
   width: 100vw;
 	font-family: 'Noto Sans KR', sans-serif;
  	font-weight: 400;
