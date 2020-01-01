@@ -287,6 +287,14 @@
 		font-size: 11px;
 	}
 	
+	#visual .visual_image {
+		padding: 0 8px;
+	}
+	
+	#visual .visual_text_01 {
+		font-size: 1.2rem;
+	}
+	
 	.main_wrap .section_01 .pain_wrap .pain_left .pain_tab li {
     width: 50%;
     font-size: 15px;
