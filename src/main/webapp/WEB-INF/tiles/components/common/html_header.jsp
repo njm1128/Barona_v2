@@ -37,6 +37,6 @@
 <script src="${pageContext.request.contextPath }/resources/plugin/flexslider/jquery.flexslider-min.js"></script>
 <script src="${pageContext.request.contextPath }/resources/plugin/magnific-popup/magnific-popup.min.js"></script>
 </head>
-<body>
+<body scroll="auto">
 	<!-- wrapper (S) -->
 	<div id="wrapper">

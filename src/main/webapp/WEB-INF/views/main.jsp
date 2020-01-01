@@ -30,26 +30,6 @@
 		if(cookieCheck08 != 'N')
 			 window.open("${pageContext.request.contextPath}/popup/popup_08.do", "c", "width=560, height=320, left=270, top=130, scrollbars=no, resizable=no, toolbars=no, menubar=no");
 	}
-	
-	$(window).on('load', function() {
-	  var windowWidth = $( window ).width();
-
-		if(windowWidth <= 320) {
-			$('#popup_layer').css('margin-left', '-145px');
-		} else if (windowWidth <= 375) {
-			$('#popup_layer').css('margin-left', '-170px');
-		} else if (windowWidth <= 426) {
-			$('#popup_layer').css('margin-left', '-194px');
-		} else if (windowWidth <= 768) {
-			$('#popup_layer').css('margin-left', '-345px');
-		} else if (windowWidth <= 992){
-			$('#popup_layer').css('margin-left', '-465px');
-		} else {
-			openPopupPc();
-			$('#popup_layer').hide();
-			$('#overlay_t').hide();
-		}
-	});
 </script>
 <div class="main_wrap">
   <!-- 통증별 소개 -->
@@ -256,17 +236,35 @@
        gallery: {enabled: true},
        zoom: {enabled: true, duration: 400}
     });
-  	
-  	var cookieCheck01 = getCookie('mpopup01YN');
+ 	</script>
+  
+  <script>
+	  var mobileInfo = new Array('Android', 'iPhone', 'iPod', 'BlackBerry', 'Windows CE', 'SAMSUNG', 'LG', 'MOT', 'SonyEricsson');
+		var is_mobile = false;
+		
+		var cookieCheck01 = getCookie('mpopup01YN');
 		var popups = $('.popup_image');
 		var current_popup = 1;
 		
+		for (var info in mobileInfo){	
+			if (navigator.userAgent.match(mobileInfo[info]) != null){
+				is_mobile = true;
+				break;
+			}
+		}
+		if(is_mobile) {
+	  	var width = $('#popup_layer').width();
+	  	$('#popup_layer').css('margin-left', '-' + (width/2) + 'px');
+	  	if(cookieCheck01 != 'N')
+	  		$('#popup_layer, #overlay_t').show(); 
+		} else {
+			openPopupPc();
+			$('#popup_layer').hide();
+			$('#overlay_t').hide();
+		}
+		
 		$('.btn_slides .popup_number').text(popup_numbering(current_popup, popups.length));
 		
-		if(cookieCheck01 != 'N' && $(window).width() <= 992) {
-			$('#popup_layer, #overlay_t').show(); 
-		}
-	
 		$('#popup_layer').css("top", Math.max(0, $(window).scrollTop() + 140) + "px"); 
 		
 		$('.btnPrev').click(function(){

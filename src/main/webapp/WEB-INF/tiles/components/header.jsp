@@ -205,7 +205,6 @@
 				menu_arr.push(['3', '4', '5']);
 				menu_arr.push(['3', '4', '5']);
 				
-				//<![CDATA[
 				function change_submenu(index) {
 					if(index == 0) return;
 					
@@ -214,12 +213,10 @@
 					$('.gnb_sub .sub_image img').eq(index-1).show();
 					var array = menu_arr[index-1];
 				  
-					array.map((p) => {
-						$('.sub-menu-0' + p).css('display', 'inline-block');
+					$.each(array, function(index, value) {
+						$('.sub-menu-0' + value).css('display', 'inline-block');
 					});
-					
 				}
-				//]]>
 			</script>
 		</div>
 	</div>
