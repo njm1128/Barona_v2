@@ -14,7 +14,7 @@
 - **Server Side**: JSP
 - **Framework**: Spring, Mybatis, Bootstrap, Tiles
 - **Database**: Mysql
-- **Server**: Tomcat8
+- **Server**: Tomcat
 - **Build**: Maven
 
 ## 주요기능
@@ -69,4 +69,4 @@
 
 ## 결과물
 
-- 바로나 마취통증의학과(리뉴얼 전): http://thebarona.com
+- 바로나 마취통증의학과: http://thebarona.com
