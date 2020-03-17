@@ -12,13 +12,18 @@
 		var cookieCheck06 = getCookie('popup06YN');
 		var cookieCheck07 = getCookie('popup07YN');
 		var cookieCheck08 = getCookie('popup08YN');
+		var cookieCheck09 = getCookie('popup09YN');
+		var cookieCheck10 = getCookie('popup10YN');
+		var cookieCheck11 = getCookie('popup11YN');
 		
-		if(cookieCheck02 != 'N')
-			 window.open("${pageContext.request.contextPath}/popup/popup_02.do", "b", "width=439, height=542, left=360, top=200, scrollbars=no, resizable=no, toolbars=no, menubar=no");
 		if(cookieCheck01 != 'N')
-			 window.open("${pageContext.request.contextPath}/popup/popup_01.do", "a", "width=439, height=542, left=300, top=130, scrollbars=no, resizable=no, toolbars=no, menubar=no");
+			 window.open("${pageContext.request.contextPath}/popup/popup_01.do", "a", "width=439, height=542, left=360, top=200, scrollbars=no, resizable=no, toolbars=no, menubar=no");
+		if(cookieCheck02 != 'N')
+			 window.open("${pageContext.request.contextPath}/popup/popup_02.do", "b", "width=439, height=542, left=300, top=130, scrollbars=no, resizable=no, toolbars=no, menubar=no");
+		//if(cookieCheck09 != 'N')
+		//	 window.open("${pageContext.request.contextPath}/popup/popup_09.do", "a", "width=439, height=542, left=300, top=130, scrollbars=no, resizable=no, toolbars=no, menubar=no");
 		//if(cookieCheck03 != 'N')
-		//	 window.open("${pageContext.request.contextPath}/popup/popup_03.do", "c", "width=439, height=542, left=225, top=232, scrollbars=no, resizable=no, toolbars=no, menubar=no");
+		//	 window.open("${pageContext.request.contextPath}/popup/popup_03.do", "b", "width=439, height=542, left=225, top=232, scrollbars=no, resizable=no, toolbars=no, menubar=no");
 		//if(cookieCheck04 != 'N')
 		//	 window.open("${pageContext.request.contextPath}/popup/popup_04.do", "d", "width=439, height=542, left=100, top=192, scrollbars=no, resizable=no, toolbars=no, menubar=no");
 		//if(cookieCheck05 != 'N')
@@ -27,8 +32,12 @@
 		//	 window.open("${pageContext.request.contextPath}/popup/popup_06.do", "c", "width=439, height=542, left=300, top=192, scrollbars=no, resizable=no, toolbars=no, menubar=no");
 		//if(cookieCheck07 != 'N')
 		//	 window.open("${pageContext.request.contextPath}/popup/popup_07.do", "c", "width=420, height=518, left=240, top=22, scrollbars=no, resizable=no, toolbars=no, menubar=no");
-		if(cookieCheck08 != 'N')
-			 window.open("${pageContext.request.contextPath}/popup/popup_08.do", "c", "width=560, height=320, left=270, top=130, scrollbars=no, resizable=no, toolbars=no, menubar=no");
+		//if(cookieCheck08 != 'N')
+		//	 window.open("${pageContext.request.contextPath}/popup/popup_08.do", "c", "width=560, height=320, left=270, top=130, scrollbars=no, resizable=no, toolbars=no, menubar=no");
+		//if(cookieCheck10 != 'N')
+		//	 window.open("${pageContext.request.contextPath}/popup/popup_10.do", "c", "width=533, height=369, left=270, top=130, scrollbars=no, resizable=no, toolbars=no, menubar=no");
+		if(cookieCheck11 != 'N')
+			 window.open("${pageContext.request.contextPath}/popup/popup_11.do", "c", "width=601, height=582, left=350, top=130, scrollbars=no, resizable=no, toolbars=no, menubar=no");
 	}
 </script>
 <div class="main_wrap">
@@ -197,7 +206,7 @@
   
   <div id="overlay_t"></div> 
 	<div id="popup_layer">
-		<img src="${pageContext.request.contextPath }/resources/images/popups/popup_08.png" style="width: 100%; display: block;" class="popup_image popup01">
+		<img src="${pageContext.request.contextPath }/resources/images/popups/popup_11.png" style="width: 100%; display: block;" class="popup_image popup01">
 		<img src="${pageContext.request.contextPath }/resources/images/popups/m_popup_01.jpg" style="width: 100%;" class="popup_image popup02">
 		<div class="btn_slides">
 			<a href="#" class="btnPrev"><i class="fas fa-chevron-circle-left"></i></a>
